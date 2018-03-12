@@ -1,0 +1,149 @@
+<! Doctype HTML>
+
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<meta name="viewport" content="width=device=width, initial-scale=1">
+		<title>Hello Page</title>
+		<style>
+		h1 {
+			color: purple;
+			background-color:white;
+		}
+		.odd {
+			color: blue;
+		}
+		.even {
+			color: white;
+			background-color: blue;
+		}
+		<!-- Multiple HTML elements can belong to the same class but each id must be unique -->
+		<!-- To make a class use . to make an id us # -->
+		<!-- Alternatively, you can select an element like h1 or p to style in head -->
+		<!-- This is called internal CSS styling-->
+		<!-- Next, I'll create CSS file (and a new html+repository) for external styling -->
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- This first line is a header - makes it important! -->
+		<h1 title="Welcome">Hello, world</h1>
+			<!-- The titles makes the tooltip say "welcome" when 
+						the mouse hovers over text  -->
+		<hr>
+		This is text. To alter text appearance, we will use the style attribute.
+		<br>
+		
+		<h2>This is a picture of this website's developer</p>
+		<img src="images/johnson_michael.jpg" title="Website Developer" alt="Website Developer"><br>
+		<a href="http://www.linkedin.com/in/mbjohnsonche" target="_blank">This is his LinkedIn page</a>
+		
+		<p>This <a href="#lists">link</a> will take you to an example of lists I made</p>
+		
+		<h2 style="color:red; text-transform:capitalize">this is an altered text heading
+						(i wrote this in code with no upper case)</h2>
+			<!-- Don't forget to put your style attribute types in quotes if you have more than one! -->
+		
+		<p>This text is in a paragraph</p>
+		
+		<div>
+			<h3>You need to use special characters to create &lt; and &gt; symbols</h3>
+		<p>I can create &nbsp;&nbsp;&nbsp; &amp; &nbsp;&nbsp;&nbsp; extra whitespace as well as the ampersand sign.<br>
+			<div>
+			Quoted text:<br>
+				<!-- the following is a bad use of span and div -->
+				<!-- div should not be inside of span, right? -->
+				<!-- I ended up deleting the span because it  wouldn't *span* (pun intended)
+					across the multiple paragraphs.. ps bad color combo!-->
+			<div style="color:white; background-color:green; font-family:verdana;
+				font-size:80%"><b><i>Reflections Question:
+			What are the pros and cons of Git's automatic merging vs always doing merges manually?
+			<br></b>
+			First, I noticed automatic merges don't let you manually commit and create a message.
+			Does this mean it doesn't create another step along the commit log?
+			Also, what if I would have wanted to make some changes to my code when merging due
+			to realizing some items were inconsistent (that Git merge did not catch). It would be
+			nice to have the option to reflect.</i></div></div>
+		
+		<p style=color:blue>1 is an odd number</p>
+		<p style="color:white; background-color:blue">2 is an even number</p>
+
+		<!-- If we want to repeat the above patterns over and over again, 
+		and changed we can use id and class -->
+		<!-- Above is called inline styling -->
+		<!-- I'm choosing this point (before updating style) as a good time to commit to git -->
+		
+		<p class="odd">1 is an odd number</p>	
+		<p class="even">2 is an even number</p>
+		<p class="odd">3 is an odd number</p>
+		<p class="even">4 is an even number</p>
+		<p class="odd">5 is an odd number</p>
+		<p class="even">6 is an even number</p>
+		<h3 id="lists">Examples of Lists</h3>
+		<p>Ordered lists are numbered:</p>
+		<ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ol>
+		
+		<p>Unordered lists are not numbered:</p>
+		<ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ul>
+		
+		<p>We can also inline (or internally or externally) change the style of lists:</p>
+		<ul style="list-style-type:circle">
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ul>
+		
+		<p>Ordered lists too:</p>
+		<ol type="A">
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ol>
+
+		<p>And we can have embedded lists:</p>
+		<ol type="A">
+			<li>First item</li>
+			<ul style="list-style-type:circle">
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ul>
+			<li>Second item</li>
+			<ul style="list-style-type:circle">
+				<li>First item</li>
+				<li>Second item</li>
+			</ul>
+			<li>Third item</li>
+		</ol>		
+	<h2>Now that we've been through this, please fill out a brief form!</h2>
+	<br> Full Name: <input type="text" name="username">
+	<br> Email Address: <input type="email" name="email">
+	<br> Password: <input type="password" name="password">
+	<br> Date of Birth: <input type:"date" name="dob">
+	<br><br> Comfortability with life:
+	<p style="padding-left: 50pt">&larr; least to most &rarr;
+	<br><input type="range" name="comfy" min="0" max="10"></p>
+	Need a nap?<br>
+	<input type="radio" name="hasnap" value="yes">Please!<br>
+	<input type="radio" name="hasnap" value="no">Nahh...<br>
+	<br> <input type="submit">
+	<div>
+	</body>
+</html>
