@@ -25,7 +25,9 @@
 
 	<body>
 			<!-- This first line is a header - makes it important! -->
-		<h1 title="Welcome">Hello, world<br><i>This page is made without responsive design</i></h1>
+
+		<h1 title="Welcome">Hello, world<br><i>This page has responsive design and includes tables</i></h1>
+
 			<!-- The titles makes the tooltip say "welcome" when 
 						the mouse hovers over text  -->
 		<hr>
@@ -79,34 +81,42 @@
 		<p class="odd">5 is an odd number</p>
 		<p class="even">6 is an even number</p>
 		<h3 id="lists">Examples of Lists</h3>
-		<p>Ordered lists are numbered:</p>
+	<div>
+		<table border=1>
+		<tr><th colspan="2">
+		<h3 id="lists">Examples of Lists</h3></th></tr>
+		<tr>
+		<td><p>Ordered lists are numbered:</p>
 		<ol>
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Third item</li>
-		</ol>
+		</ol></td>
 		
-		<p>Unordered lists are not numbered:</p>
+		<td><p>Unordered lists are not:</p>
 		<ul>
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Third item</li>
-		</ul>
+		</ul></td>
+		</tr>
 		
-		<p>We can also inline (or internally or externally) change the style of lists:</p>
+		<tr>
+		<td><p>We can also use style <br>to change the list typing:</p>
 		<ul style="list-style-type:circle">
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Third item</li>
-		</ul>
+		</ul></td>
 		
-		<p>Ordered lists too:</p>
+		<td><p>Ordered lists too!</p>
 		<ol type="A">
 			<li>First item</li>
 			<li>Second item</li>
 			<li>Third item</li>
-		</ol>
+		</ol></td>
 
+		<tr><td colspan="2">
 		<p>And we can have embedded lists:</p>
 		<ol type="A">
 			<li>First item</li>
@@ -121,19 +131,37 @@
 				<li>Second item</li>
 			</ul>
 			<li>Third item</li>
-		</ol>		
-	<h2>Now that we've been through this, please fill out a brief form!</h2>
-	<br> Full Name: <input type="text" name="username">
-	<br> Email Address: <input type="email" name="email">
-	<br> Password: <input type="password" name="password">
-	<br> Date of Birth: <input type:"date" name="dob">
-	<br><br> Comfortability with life:
+		</ol><tr>
+		</div>
+		<br>
+		
+	<!-- For some reason my table is being put at the end of the document -->
+	<!-- when I am opening hello.html. I will try to fix it by putting the -->
+	<!-- form in a table as well. (I've alreay tried problem solving with -->
+	<!-- <div>, I'm not really sure what the problem is. -->
+	
+	<div>
+	<table border="2 solid black">
+	<tr>
+	<th colspan=2><h2>Now that we've been through this, please fill out a brief form!
+	</h2></th>
+	<tr>
+	<td>Full Name: <input type="text" name="username">
+	<br><br> Email Address: <input type="email" name="email">
+	<br><br> Password: <input type="password" name="password">
+	<br><br> Date of Birth: <input type:"date" name="dob"></td>
+	<td>Comfortability with life:
 	<p style="padding-left: 50pt">&larr; least to most &rarr;
 	<br><input type="range" name="comfy" min="0" max="10"></p>
 	Need a nap?<br>
 	<input type="radio" name="hasnap" value="yes">Please!<br>
 	<input type="radio" name="hasnap" value="no">Nahh...<br>
-	<br> <input type="submit">
-	<div>
+	<br></td>
+	<tr><td colspan="2" style="text-align:center">
+	<br><input type="submit"><br><br>	
+	</td></tr>
+	</table>
+	
+	</div>
 	</body>
 </html>
