@@ -1,0 +1,97 @@
+/* Changes with SASS form CSS:
+	Set variable names to easily change content
+	Embed classes that are used together: event & event stylesheet
+	I don't *think* I need any partials or imports
+	However, should I use a mixin for the raidus function?
+		Does radius not work the same in all browser? Will leave it out for window*/
+body {
+  font-family: Helvetica, Arial, Tahoma; }
+
+table {
+  table-layout: fixed;
+  width: 70%;
+  border-collapse: collapse;
+  border: 4px solid #081329; }
+
+td {
+  border-collapse: collapse;
+  border: 4px solid #081329; }
+
+h1 {
+  color: #22E2E3;
+  font-size: 200%;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-right: 50px;
+  padding-bottom: 150px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px #000;
+  vertical-align: top; }
+
+ul {
+  font-size: 75%;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 5px; }
+
+/* What order do we make CSS in? I'm going top down, ordering: element, class, id
+	I'm sure others have different logic but for my first I'm just going with this */
+.month-header {
+  background-image: url(https://pre00.deviantart.net/1ab1/th/pre/f/2017/010/3/a/the_fireplace_by_3hil-dau0n37.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: right; }
+
+.copyright-notice {
+  color: #992600;
+  font-size: 50%;
+  padding-right: 50px;
+  text-align: right;
+  text-decoration: none;
+  vertical-align: bottom; }
+
+.weekday-header {
+  border-collapse: collapse;
+  border: 4px solid #081329;
+  background-color: #00001a;
+  color: #F3EFA5;
+  letter-spacing: 1px;
+  line-height: 25px; }
+
+.week {
+  border-collapse: collapse;
+  border: 4px solid #081329;
+  background-color: #122432;
+  color: #33ccff;
+  height: 75px;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top; }
+
+.off-day {
+  background-color: #081329; }
+
+.event {
+  border-radius: 5px;
+  color: #10171C;
+  padding: 5px;
+  margin: 5px 0; }
+
+.dog-walk {
+  background-color: #97DDC7; }
+
+.school {
+  background-color: #D3B257; }
+
+.appointment {
+  background-color: #F9FC9B; }
+
+.birthday {
+  background-color: #C55A36; }
+
+.holiday {
+  background-color: #707E77; }
+
+/*# sourceMappingURL=sass-new.css.map */

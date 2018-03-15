@@ -1,0 +1,15 @@
+Webisite design flow:
+
+Nice and simple landing page. Links to different "projects" and contact info.
+
+Separating HTML from CSS, creating SCSS, then changing SCSS
+
+Taking Udacity course in GitHub
+	notes I took on it (link to repository)
+	projects we did: finding bugs in games and fixing them
+		coins easy
+		coins normal
+		coins hard
+	updating recipe list
+
+JavaScript notes... work in progress

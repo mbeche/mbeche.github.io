@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html>
+	<head>
+	<title>Asteroids + Edits</title>
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		<style>
+			body {
+				text-align: Left;
+				font: 1em/1.5 Georgia, serif;
+				color: #333;
+			}
+			html {
+				line-height: 1;
+			}
+			
+			h1 {
+				font-family: Bitter, Georgia, serif;
+				font-size: 2em;
+				LINE-HEIGHT:6px; 
+				padding: 0.5em 0 0.5em;
+			}
+			
+			h2 {
+				font-family: Bitter, Georgia, serif;
+				font-size: 1.5em;
+				padding: 0 0 0 0;
+			}
+
+			h3 {
+				font-family: Bitter, Georgia, serif;
+				font-size: 1em;
+				LINE-HEIGHT:6px;
+				padding: 0 0 0 0;
+			}
+			
+			blockquote {
+				background: #f7e6ff;
+				border-left: 10px solid #9b319b;
+				margin: 1.5em 10px;
+				padding: 0.5em 10px;
+				quotes: "\201C""\201D""\2018""\2019";
+				FONT-SIZE:14px; 
+				font-style: italic; 
+				COLOR:#674c67; 
+				LINE-HEIGHT:16px; 
+				FONT-FAMILY:Helvetica,"Arial Narrow",sans-serif;
+			}
+			
+			code {
+				FONT-SIZE:12px;
+			}
+			
+			mark {
+				background-color: #ccf5ff;
+				color: black;
+			}
+			
+			.rcorners {
+				border-radius: 25px;
+				background: #e6e6ff;
+				padding: 1px 20px 1px; 
+				 
+			}
+		</style>
+	</head>
+	
+	<body style="background-color: lightblue;">
+		<h1>Using Git and GitHub</h1>		
+
+		<div class="rcorners">
+		<h2 style="LINE-HEIGHT:18px;">Learning from the free <a href="https://www.udacity.com/course/ud775">online course</a> offered by Udacity</h2>
+			<p>This course was well designed and engaging to complete. The instructors, Caroline and
+			Sarah, helped guide me through understanding not only how to use Git and GitHub for
+			version control for solo and collaborative projects, but also the <i>importance</i> of using
+			some type of version control.</p>
+		</div>
+		
+		<h2>Table of Contents</h2>
+		
+		<div class="rcorners">
+			<ul>
+				<li><a href="#refl">In Reflection</a>:
+				Excerpts from written reflections taken while completing course content.
+				</li>
+				<li><a href="#cook">Pushing Recipes:<a/> Using Git/GitHub to fork, pull request, and more</li>
+				<li><a href="#asteroids">Let's Play a Game:<a/> Using Git to figure out where bugs were
+				introduced in a JavaScript based game. Then using JavaScript to change the difficulty of the game.</li>
+			</ul>
+		</div>
+		
+		<h2 id="refl">In Reflection</h2>	
+		<div class="rcorners">
+			<p>Throughout the course I wrote prompted reflections on what were were learning
+			and the merits of various aspects of the version control software. Here are some important
+			excerpts I feel exemplify my learning:</p>
+			
+			<blockquote>
+				<b><span style="font-size:18px; font-style: normal; LINE-HEIGHT:24px;">
+				How using version control allows us to be more confident and innovative
+				</b></span>
+			<br>
+				<span style="font-size:14px; LINE-HEIGHT:18px;">
+				By using Git, we obtain freedom to try big changes without worrying about
+				how to revert back to previous versions. This way we don't have to worry about
+				breaking our code. Also, if we do break our code and don't (yet, perhaps) know
+				how to fix it, we can revert to a previous state and make a new branch, leaving
+				the broken code wait for us until we are ready to deal with it.
+				This <a href="https://www.youtube.com/watch?v=THmul1MlYvI&feature=youtu.be">
+				interview from Lewis Kaneshiro</a> helps explain how Git has helped him become
+				a prolific programmer. I'm honestly excited to use Git in my personal projects and am
+				excited by the idea of job in a collaborative enviroment that utilizes version control.
+				</span>
+			</blockquote>
+			
+			<p>
+			While this is exciting and Git has great power, learning to use Git 
+			is not a trivial experience. Below I highlight some of the tactics for
+			using Git commands to identify when a bug was introduced into a program
+			and how to identify the lines of code that fix it.
+			</p>
+
+			<blockquote >
+				<b><span style="font-size:18px; font-style: normal; LINE-HEIGHT:24px;">
+				How git commands "git log" and "git diff" to view the history of files
+				</b></span>
+			<br>
+				<span style="font-size:14px; LINE-HEIGHT:18px;">
+				By using the command <mark><code>git log</code></mark> you view the committed changes that have been
+				logged. Each log contains a comment describing what changed in that commit. If you think a certain
+				commit may have introduced a bug into your program, you can "step into" certain log states by using 
+				the <mark><code>git checkout ID</code></mark> command where ID is the commit ID from the commit log.
+				If you are interested in what specific code changes during a commit, you coukd
+				compare it to the previous commit. To do this you use the <mark><code>git diff</code></mark> command along with
+				the IDs provided by the log. Note that in your command prompt, copy and paste hotkeys may not
+				be the same as what you are used to! (apparently it's crtl/shift + ins in my Git Bash MINGW64 command prompt).
+				</span>
+			</blockquote>
+			
+			<p>Expanding on the functionality of Git, we learned the nuanced differences
+			between our working directory, Git repository, and the staging area. At first
+			one might think, "Is it really necessary to have these different spaces? Why
+			not just automatically update my repository when I make a change in the working
+			directory?" Simply put, the more control we have the more flexibility we have in
+			our work flow. What would happen if Git committed a change in the middle of
+			a coding line? It's best for us to commit our own changes at meaningful points.</p>
+			
+			<blockquote>
+				<b><span style="font-size:18px; font-style: normal; LINE-HEIGHT:24px;">
+				Repository, working directory, and staging area,<i> oh my!</i>
+				</b></span>
+			<br>
+				<span style="font-size:14px; LINE-HEIGHT:18px;">
+				The working directory contains the physical files on your hard drive. The repository
+				contains the data files for the history of commits/branches.
+				The staging area lets you take items that you have changed in your working
+				directory and then commit changes. The staging area lets you
+				commit any number of files (one at a time or multiple files together) depending on
+				which files you are ready to commit, allowing for flexibility.
+				<br><br>
+				
+				<b>Note on Commands:</b><br>
+				When there no changes to stage, the staging area contains
+				the most recent commit. This helps us utilize these commands:
+					<ul type=none>
+						<li><mark><code>git diff</mark></code> compares the working directory to the staging area</li>
+						<li><mark><code>git diff --staged</mark></code> compares the staging area to the most recent commit</li>
+						<li><mark><code>git diff ID1 ID2</mark></code> compares the two commits with ID1 and ID2</li>
+					</ul>
+				For etiquette on commits comments, check out the <a href="http://udacity.github.io/git-styleguide/">Udacity Git Commit Message Style Guide</a>
+				</span>
+			</blockquote>
+			
+			<p>I hope you enjoyed reading about my learning experience through the excerpts
+			on my reflections. I'd be happy to share me if you'd like to contact me. You can
+			<b>view all of my reflections</b> from this course by accessing them
+			through my <b><a href="https://github.com/mbeche/reflections">GitHub</a></b>.</p>
+		</div>
+		
+		<h2 id="cook">Pushing Recipes:</h2>
+		
+		<h2 id="asteroids">Pushing Recipes:</h2>
+
+		<div class="rcorners">
+		<h3>Version 1 Normal Mode</h3>
+			<p>One of the tasks for the Version Control (Git/GitHub) course I took through
+			Udacity was to search the log of a video game to find when an bud was
+			introduced. Then use diff to see what the buggy code was. The version below
+			is the final version we created in normal mode:</p>
+			<p align="center"><iframe src="asteroids-normal/index.html" width="800" height="580" style="background-color: white;"></iframe></p>
+		</div><br>
+
+		<div class="rcorners">
+		<h3>Version 2: Hard Mode</h3>
+			<p>To change the game difficulty, we were guided to the location
+			in the file where the number of fragments an asteroid breaks into
+			upon being shot was defined. I decided to make my hard mode have the
+			asteroids break into 5 pieces. Also, I added difficulty by making the
+			boulders move at a higher speed after breaking than in normal mode. This
+			was not discussed in the Udacity course but the programmer clearly
+			labeled the variables so it was easy for me to figure out how to change this:</p>
+			<p align="center"><style="text-align: center;"><iframe src="asteroids-hard/index.html" width="800" height="580" style="background-color: white;"></iframe></p>
+		</div><br>
+
+		<div class="rcorners">		
+		<h3>Version 3: Easy Mode</h3>
+			<p>To make an easy version of the game, switched it so each asteroid
+			broke into two fragments when hit with a bullet. I also made the fragments
+			move slower than in normal mode. Lastly, I removed the delay from the bullet
+			trigger so you can shoot a stream of bullets. I think spinning and flying around
+			while shooting creates some awesome visuals. The velocity of the bullets leave relative
+			to your velocity. Try speeding up and shooting/forward backwards to see what I mean:</p>
+			<p align="center"><iframe src="asteroids-easy/index.html" width="800" height="580" style="background-color: white;"></iframe></p>
+		</div>
+	</body>
+</html>

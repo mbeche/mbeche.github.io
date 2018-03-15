@@ -4,28 +4,140 @@
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <title> My Portfolio</title>
-    <!-- using viewport meta tag for responsive design-->
+    
+	<!-- using viewport meta tag for responsive design-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <!-- the following code allows older browsers to support modern HTML5.
-        I'm not 100% why the first line isn't uncommented but I'll leave it for now.
-        The website I'm using to build this is: https://webdesign.tutsplus.com/tutorials/build-a-responsive-single-page-portfolio-with-sass-and-compass--webdesign-10734
-    <!--[if IE]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- FYI. To make this site I followed the tutorial:
+	https://webdesign.tutsplus.com/tutorials/build-a-responsive-single-page-portfolio-with-sass-and-compass--webdesign-10734
+	Unfortunately, I was unable to get the dribble carousel to work-->
   </head>
   <body>
+    <div class="bar"></div>
     <header class="header">
-      <img src="https://github.com/mbeche/mbeche.github.io/blob/master/johnson_michael.jpg?raw=true" 
-	  width="50%" height="50%" class="avatar" />
-      <h1> Hello, I'm Michael Johnson. <br/>
-        I'm a former engineer, </br> science educator,
-      </br>forever learner, </br> aspiring developer.
-      </h1> </header>
-<!--    <section class="content">
+
+		<img src="images/johnson_michael.jpg" width="50%" height="50%" class="avatar" />
+
+		<h1> 
+			Hello, I'm Michael Johnson.<br>
+			I'm a former engineer, science educator, 
+			forever learner, aspiring developer.
+		</h1>
+
+	</header>
+    <div class="bar"></div>
+
+	<div class="bd">
+	<section class="bd">
+	<h1>A sampling of projects:</h1>
+	</section>
+
+
+	<section>
+		<!--Note to viewer: this code was copied from
+		https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
+		and then edited for my purpose-->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+			<div class="item active">
+			  <img src="images/git-asteroids.jpg" alt="Git Asteroids Screenshot">
+				<div class="carousel-caption">
+					<div class="rcorners">
+						<h3>Project 1: Git'n Asteroids</h3>
+						<p>Using version control to find bugs in code and to collaborate</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+			  <img src="images/sass-calendar.jpg" alt="Calendar Sample">
+				<div class="carousel-caption">
+					<div class="rcorners">
+						<h3>Project 2: Sassy Calendar</h3>
+						<p>Separating CSS from HTML, porting to SASS, then restyling</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+			  <img src="images/education-page.jpg" alt="Course Science Blog">
+				<div class="carousel-caption">
+					<div class="rcorners">
+						<h3>Project 3: Science v. Web Content</h3>
+						<p>As a university instructor I create web content for my students 
+						in physics and physical science</p>
+					</div>
+				</div>
+			</div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</section>
+	<br><br>
+	</div>
+
+	<section class="content">
+	<h1>Testing</h1>
+	<p>Just putting a filler in<p>
+	</section>
+
+
+	<!--<section class="content">
       <h1 class="dribble">Latest Dribbles</h1>
       <div class="carousel">
         <div class="shots-container">
-          K< -->
-	<h2><a href="up/hello.html">Click here to go to my second page</a></h2>
+          <ul class="shots">
+            <li><img src="images/loading.gif" alt"Loading" /></li>
+            <li><i>Sorry, but the tutorial used to create this website was out of date
+              and the API access for <a href="https://dribbble.com/">Dribble.com</a>
+              has changed. In place here should be a side scrolling carousel showing
+              the top 10 shots from my dribble page.</i>
+          </ul>
+        </div>
+        <span class="mask mask-right"></span>
+        <span class="mask mask-left"></span>
+      </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script src="javascripts/dribbble.js"></script>
+      <p>&larr; scroll to view &rarr;</p>
+    </section>-->
+    <div class="bar"></div>
+	<footer class="footer">
+		<br><div id="contact">
+		<h1>Find Me, Friend Me,<br> or Hire Me</h1>
+			<p>Thank you for visiting. I hope you found my portfolio interesting. 
+			<br>You can contact me via:</p>
+		</div>
+		<ul class="social">
+			<li class="icon-linkedin" id="linked"><a href="https://www.linkedin.com/in/mbjohnsonche/">LinkedIn</a></li>
+			<li class="icon-envelop" id="email"><a href="mailto:mb.johnsonbece@gmail.com">e-mail</a></li>
+			<li class="icon-mobile" id="phone"><a href="www.google.com">360-621-9773</a></li>
+		</ul>
+	</footer>
+    <div class="bar"></div>
   </body>
 </html>
