@@ -27,6 +27,48 @@ $red: rgba(219, 34, 42, 1);
 	margin: auto;
 }
 
+table {
+	table-layout: fixed;
+	border: 10px;
+	display: block;
+}
+
+td:nth-child(1) {
+	width: 50%;
+	padding: 10px 10px 10px 10px;
+}
+
+td:nth-child(2) {
+	width: 50%;
+	padding: 10px 10px 10px 10px;
+}
+
+.header-box {
+	border-radius: 25px;
+	background: $maroon;
+	color:white;
+	max-width: 500px;
+	padding: 15px 0px 15px;
+	margin:auto;
+}
+
+.head-box {
+	border-radius: 25px;
+	background: $maroon;
+	color:white;
+	max-width: 300px;
+	padding: 5px 0px 10px; 
+	margin:auto;
+}
+
+.body-box {
+	border-radius: 25px;
+	background: #e6e6ff;
+//	@include inline-block();
+//	max-width: 600px;
+	padding: 5px 20px 5px; 
+}
+
 .rcorners {
 	opacity: 0.9;
 	border-radius: 25px;
@@ -38,13 +80,26 @@ $red: rgba(219, 34, 42, 1);
 }
 
 html {
-	h1 {
+
+	h1, h2, h3 {
 		font-family: Bitter, Georgia, serif;
-		font-size: 2em;
-		/* if you want to use the italic version of Bitter */
 		padding: 0 1em;
+		
+		h1 {
+			font-size: 3em;
+		}
+
+		h2 {
+			font-size: 2em;
+		}
+
+		h3 {
+			font-size: 2em;
+		}
+
 	}
 }
+
 
 .header,
 .footer {
@@ -63,21 +118,6 @@ html {
     padding: .5em 0 0.5em;
 }
  
-.content {
-	background: $lightblue;
-    border-top: 1px solid #e9e9e9;
-    border-bottom: 1px solid #e9e9e9;
- 
-    h1 {
-		color: #ea4c89; // dribbble brand color
-    }
- 
-    p {
-        font-size: .85em;
-        color: #333333;
-    }
-}
-
 //this would not be allowed in CSS, it would need to be split into two
 
 .header {
@@ -106,6 +146,7 @@ section {
 	background-color: $midblue;
 	border-top: 1px solid $midblue;
     border-bottom: 1px solid $midblue;
+	padding: 1em 1em 1em;
 }
 
 body {
