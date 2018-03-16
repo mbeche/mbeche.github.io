@@ -26,10 +26,28 @@ $color5: rgba(164, 74, 63, 1);
 	color:#000000;
 }
 
+
+.old-box {
+	border-radius: 25px;
+	background: #eaeaea;
+	max-width:600px;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color:#000000;
+}
+
+.new-box {
+	border-radius: 25px;
+	background: #eaeaea;
+	max-width:600px;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color:#000000;
+}
+
 html {
 	h1, h2, h3 {
 		font-family: Bitter, Georgia, serif;
-		font-size: 2em;
 		/* if you want to use the italic version of Bitter */
 		padding: 0 1em;
 	}
@@ -52,23 +70,15 @@ html {
     padding: .5em 0 0.5em;
 }
 
-body {
-	background-color:$color2;
- }
 
-.section {
+section {
 	background-color: $color2;
-    border-top: 1px solid #e9e9e9;
-    border-bottom: 1px solid #e9e9e9;
- 
-    h1 {
-		color: #ea4c89; // dribbble brand color
-    }
- 
-    p {
-        font-size: .85em;
-        color: #333333;
-    }
+	border-top: 1px solid $color2;
+    border-bottom: 1px solid $color2;
+	
+	ol {
+		list-style-type: decimal;
+	}
 }
 
 //this would not be allowed in CSS, it would need to be split into two

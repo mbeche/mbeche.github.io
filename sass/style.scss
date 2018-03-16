@@ -14,10 +14,6 @@ $lightblue: rgba(191, 219, 247, 1);
 $darkblue: rgba(5, 60, 94, 1);
 $midblue: rgba(31, 122, 140, 1);
 $red: rgba(219, 34, 42, 1);
-
-.bd {
-	background:$midblue;
-}
 	  
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -105,6 +101,12 @@ html {
 
 //why does is it ".header" and .avatar but just, h1, "body" and a?
 //.avatar makes sense because it's a class, but header?
+
+section {
+	background-color: $midblue;
+	border-top: 1px solid $midblue;
+    border-bottom: 1px solid $midblue;
+}
 
 body {
 	text-align: center;
