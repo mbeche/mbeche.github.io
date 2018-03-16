@@ -1,0 +1,130 @@
+$font:Helvetica, Arial, Tahoma;
+$table-width:70%;
+$img:url(https://pre00.deviantart.net/1ab1/th/pre/f/2017/010/3/a/the_fireplace_by_3hil-dau0n37.jpg);
+$text-color:#22E2E3;
+$acc-text-color:#992600;
+$header-bg-color:#00001a;
+$week-bg-color:#122432;
+$off-bg-color:#081329;
+$border-color: #081329;
+$event1-color:#97DDC7;
+$event2-color:#D3B257;
+$event3-color:#F9FC9B;
+$event4-color:#C55A36;
+$event5-color:#707E77;
+
+/* Changes with SASS form CSS:
+	Set variable names to easily change content
+	Embed classes that are used together: event & event stylesheet
+	I don't *think* I need any partials or imports
+	However, should I use a mixin for the raidus function?
+		Does radius not work the same in all browser? Will leave it out for window*/
+
+body {
+	font-family:$font;
+}
+
+table {
+	table-layout:fixed;
+	width:$table-width;
+	border-collapse:collapse;
+  border: 4px solid $off-bg-color;
+//	border-collapse:collapse;
+}
+
+td {
+	border-collapse:collapse;
+	border: 4px solid $off-bg-color;
+}
+//I'll leave most of the one numerous one use variables alone
+h1 {
+	color:$text-color;
+	font-size:200%;
+	font-weight:700;
+	letter-spacing:3px;
+	padding-right:50px;
+	padding-bottom:150px;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px #000;
+	vertical-align:top;
+}
+
+ul {
+	font-size:75%;
+	list-style:none;
+	padding-left:20px;
+	padding-right:5px;
+}
+
+/* What order do we make CSS in? I'm going top down, ordering: element, class, id
+	I'm sure others have different logic but for my first I'm just going with this */
+
+.month-header {
+	background-image:$img;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:300px;
+	text-align:right;
+}
+
+.copyright-notice {
+	color:$acc-text-color;
+	font-size:50%;
+	padding-right:50px;
+	text-align:right;
+	text-decoration:none;
+	vertical-align:bottom;
+}
+
+.weekday-header {
+	border-collapse:collapse;
+	border: 4px solid $off-bg-color;
+	background-color:$header-bg-color;
+	color:#F3EFA5;
+	letter-spacing:1px;
+	line-height:25px;
+}
+
+.week {
+	border-collapse:collapse;
+	border: 4px solid $off-bg-color;
+	background-color:$week-bg-color;
+	color:#33ccff;
+//	border-color:$border-color;
+	height:75px;
+	margin:0;
+	font-weight:bold;
+	text-align:left;
+	vertical-align:top;
+}
+
+.off-day {
+	background-color:$off-bg-color;
+}
+
+.event {
+
+	border-radius:5px;
+	color:#10171C;
+	padding:5px;
+	margin:5px 0;
+}
+
+.dog-walk {
+	background-color:$event1-color;
+}
+.school {
+	background-color:$event2-color;
+}
+
+.appointment {
+	background-color:$event3-color;
+}
+
+.birthday {
+	background-color:$event4-color;
+}
+
+.holiday {
+	background-color:$event5-color;
+}
