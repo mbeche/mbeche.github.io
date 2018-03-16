@@ -63,51 +63,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 19, ../sass/calendar-style.scss */
-.rcorners {
-  opacity: 0.9;
-  border-radius: 25px;
-  background: #9cb380;
-  max-width: 520px;
-  margin: auto;
-  padding: 2px 0px 15px 0px;
-  color: #000000;
-}
-
-/* line 30, ../sass/calendar-style.scss */
-.old-box {
-  border-radius: 25px;
-  background: #eaeaea;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px 20px 20px 20px;
-  color: #000000;
-}
-
-/* line 39, ../sass/calendar-style.scss */
-.new-box {
-  border-radius: 25px;
-  background: #eaeaea;
-  max-width: 600px;
-  margin: auto;
-  padding: 20px 20px 20px 20px;
-  color: #000000;
-}
-
-/* line 49, ../sass/calendar-style.scss */
+/* line 21, ../sass/calendar-style.scss */
 html h1, html h2, html h3 {
   font-family: Bitter, Georgia, serif;
   /* if you want to use the italic version of Bitter */
   padding: 0 1em;
 }
 
-/* line 56, ../sass/calendar-style.scss */
+/* line 28, ../sass/calendar-style.scss */
 .header,
 .footer {
   background: #a44a3f;
 }
 
-/* line 61, ../sass/calendar-style.scss */
+/* line 33, ../sass/calendar-style.scss */
 .bar {
   height: 40px;
   background: #94a89a;
@@ -115,35 +84,35 @@ html h1, html h2, html h3 {
   margin-left: auto;
 }
 
-/* line 68, ../sass/calendar-style.scss */
+/* line 40, ../sass/calendar-style.scss */
 .content,
 .footer {
   padding: .5em 0 0.5em;
 }
 
-/* line 74, ../sass/calendar-style.scss */
+/* line 46, ../sass/calendar-style.scss */
 section {
   background-color: #9cb380;
   border-top: 1px solid #9cb380;
   border-bottom: 1px solid #9cb380;
 }
-/* line 79, ../sass/calendar-style.scss */
+/* line 51, ../sass/calendar-style.scss */
 section ol {
   list-style-type: decimal;
 }
 
-/* line 86, ../sass/calendar-style.scss */
+/* line 58, ../sass/calendar-style.scss */
 .header {
   padding: 1em 1em 1em;
 }
-/* line 88, ../sass/calendar-style.scss */
+/* line 60, ../sass/calendar-style.scss */
 .header h1 {
   color: black;
   font-style: italic;
   font-size: 2em;
 }
 
-/* line 98, ../sass/calendar-style.scss */
+/* line 70, ../sass/calendar-style.scss */
 .avatar {
   -moz-box-shadow: 0 0 0px 3px #003366, 0 0 0 4px #660066, 0 0 4px 6px #330033;
   -webkit-box-shadow: 0 0 0px 3px #003366, 0 0 0 4px #660066, 0 0 4px 6px #330033;
@@ -155,7 +124,7 @@ section ol {
   height: 125px;
 }
 
-/* line 108, ../sass/calendar-style.scss */
+/* line 80, ../sass/calendar-style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
@@ -163,12 +132,12 @@ body {
   background: #c7ac92;
 }
 
-/* line 115, ../sass/calendar-style.scss */
+/* line 87, ../sass/calendar-style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 119, ../sass/calendar-style.scss */
+/* line 91, ../sass/calendar-style.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -181,7 +150,7 @@ img {
   font-weight: normal;
   font-style: normal;
 }
-/* line 136, ../sass/calendar-style.scss */
+/* line 108, ../sass/calendar-style.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -196,22 +165,64 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 151, ../sass/calendar-style.scss */
+/* line 123, ../sass/calendar-style.scss */
 .icon-envelop:before {
   content: "\e945";
 }
 
-/* line 154, ../sass/calendar-style.scss */
+/* line 126, ../sass/calendar-style.scss */
 .icon-mobile:before {
   content: "\e958";
 }
 
-/* line 157, ../sass/calendar-style.scss */
+/* line 129, ../sass/calendar-style.scss */
 .icon-linkedin:before {
   content: "\eac9";
 }
 
-/* line 161, ../sass/calendar-style.scss */
+/* line 134, ../sass/calendar-style.scss */
+.calendars li {
+  font-size: 1.5em;
+  color: black;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 142, ../sass/calendar-style.scss */
+.rcorners {
+  border-radius: 25px;
+  background: #d4e09b;
+  max-width: 600px;
+  margin: auto;
+  padding: 0px 0px 5px 15px;
+  color: #000000;
+}
+
+/* line 151, ../sass/calendar-style.scss */
+.old-box {
+  border-radius: 25px;
+  background: #eaeaea;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  color: #000000;
+}
+
+/* line 160, ../sass/calendar-style.scss */
+.new-box {
+  border-radius: 25px;
+  background: #eaeaea;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  color: #000000;
+}
+
+/* line 169, ../sass/calendar-style.scss */
 #contact {
   background: #77b3ee;
   max-width: 520px;
@@ -221,32 +232,32 @@ img {
   color: white;
 }
 
-/* line 171, ../sass/calendar-style.scss */
+/* line 179, ../sass/calendar-style.scss */
 #linked {
   background: #94a89a;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 177, ../sass/calendar-style.scss */
+/* line 185, ../sass/calendar-style.scss */
 #email {
   background: #d4e09b;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 183, ../sass/calendar-style.scss */
+/* line 191, ../sass/calendar-style.scss */
 #phone {
   background: #c7ac92;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 189, ../sass/calendar-style.scss */
+/* line 197, ../sass/calendar-style.scss */
 .social {
   margin: 2em 0;
 }
-/* line 193, ../sass/calendar-style.scss */
+/* line 201, ../sass/calendar-style.scss */
 .social li {
   font-size: 1.5em;
   color: black;
@@ -262,7 +273,7 @@ img {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 202, ../sass/calendar-style.scss */
+/* line 210, ../sass/calendar-style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -271,11 +282,11 @@ img {
   color: grey;
   text-shadow: 0px 0px 10px;
 }
-/* line 208, ../sass/calendar-style.scss */
+/* line 216, ../sass/calendar-style.scss */
 .social li:hover #phone #email #linked {
   background: #36454f;
 }
-/* line 213, ../sass/calendar-style.scss */
+/* line 221, ../sass/calendar-style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -284,7 +295,7 @@ img {
   top: 0m;
   left: 50%;
 }
-/* line 221, ../sass/calendar-style.scss */
+/* line 229, ../sass/calendar-style.scss */
 .social li a {
   display: block;
   color: inherit;

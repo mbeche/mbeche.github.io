@@ -15,35 +15,7 @@ $color3: rgba(148, 168, 154, 1);
 $color4: rgba(199, 172, 146, 1);
 $color5: rgba(164, 74, 63, 1);
 
-
-.rcorners {
-	opacity: 0.9;
-	border-radius: 25px;
-	background: $color2;
-	max-width:520px;
-	margin: auto;
-	padding: 2px 0px 15px 0px;
-	color:#000000;
-}
-
-
-.old-box {
-	border-radius: 25px;
-	background: #eaeaea;
-	max-width:600px;
-	margin: auto;
-	padding: 20px 20px 20px 20px;
-	color:#000000;
-}
-
-.new-box {
-	border-radius: 25px;
-	background: #eaeaea;
-	max-width:600px;
-	margin: auto;
-	padding: 20px 20px 20px 20px;
-	color:#000000;
-}
+$box-width:600px;
 
 html {
 	h1, h2, h3 {
@@ -156,6 +128,42 @@ img {
 }
 .icon-linkedin:before {
   content: "\eac9";
+}
+
+.calendars {
+    li {
+		font-size:1.5em;
+		color:black;	
+        position: relative;
+        @include inline-block();
+	}
+}
+
+.rcorners {
+	border-radius: 25px;
+	background: $color1;
+	max-width:600px;
+	margin: auto;
+	padding: 0px 0px 5px 15px;
+	color:#000000;
+}
+
+.old-box {
+	border-radius: 25px;
+	background: #eaeaea;
+	max-width:$box-width;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color:#000000;
+}
+
+.new-box {
+	border-radius: 25px;
+	background: #eaeaea;
+	max-width:$box-width;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color:#000000;
 }
 
 #contact {
