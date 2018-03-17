@@ -146,18 +146,15 @@ html {
 .header,
 .footer {
     background: $red;
+    padding: 1em 1em 1em;
 }
 
 .bar {
     height: 40px;
     background: $darkblue;
-    width: auto;
-    margin-left: auto;
+    margin: auto;
 }
 
-.footer, .header {
-    padding: 1em 1em 1em;
-}
 
 .avatar {
     @include box-shadow(0 0 10px 4px $darkblue, 0 0 12px 6px $red, 0 0 14px 10px $maroon);

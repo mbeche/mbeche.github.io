@@ -1,0 +1,171 @@
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+$color1: rgba(195, 247, 58, 1); //Green Lizard #C3F73A Lime
+$color2: rgba(149, 224, 108, 1); //Pistachio #95E06C Green
+$color3: rgba(104, 182, 132, 1); //Iguana #68B684 Darker Green
+$color4: rgba(9, 77, 146, 1); //Yale Blue #094D92 Blue
+$color5: rgba(28, 16, 24, 1); //Licorice #1C1018 Black-Purple
+$color6: rgba(251, 242, 192, 1); //Blond #FBF2C0 Light Tan Pink
+$color7: rgba(72, 57, 42, 1); //Taupe #48392A Tan Brown
+$color8: rgba(67, 40, 28, 1); //Bistre #43281C Dark Brown
+*/
+/* line 32, ../sass/python-style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 38, ../sass/python-style.scss */
+.nav {
+  background-color: #472836;
+  font-family: arial, tahoma;
+  font-weight: bold;
+  border-bottom: 2px solid #9ad2cb;
+  border-top: 2px solid #9ad2cb;
+  /* Change the link color to #111 (black) on hover */
+}
+/* line 45, ../sass/python-style.scss */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 51, ../sass/python-style.scss */
+.nav li {
+  border-right: 2px solid #9ad2cb;
+  float: left;
+}
+/* line 56, ../sass/python-style.scss */
+.nav li:last-child {
+  border-left: 2px solid #9ad2cb;
+  float: right;
+}
+/* line 61, ../sass/python-style.scss */
+.nav a {
+  height: 40px;
+  color: white;
+  display: block;
+  padding: 8px;
+}
+/* line 69, ../sass/python-style.scss */
+.nav li a:hover {
+  text-decoration: none;
+  background-color: #472836;
+  color: white;
+}
+
+/* line 78, ../sass/python-style.scss */
+.box {
+  border-radius: 25px;
+  color: white;
+  margin: auto;
+  background: #feffbe;
+  padding: 20px 20px 20px;
+  display: inline-block;
+}
+
+/* line 89, ../sass/python-style.scss */
+.header,
+.footer {
+  background: #9ad2cb;
+  padding: 1em 1em 1em;
+}
+
+/* line 95, ../sass/python-style.scss */
+.bar {
+  height: 40px;
+  background: #472836;
+  margin: auto;
+}
+
+/* line 103, ../sass/python-style.scss */
+.avatar {
+  -moz-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #9ad2cb, 0 0 14px 10px #d7ebba;
+  -webkit-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #9ad2cb, 0 0 14px 10px #d7ebba;
+  box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #9ad2cb, 0 0 14px 10px #d7ebba;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+/*
+section {
+	background-color: $midblue;
+	border-top: 1px solid $midblue;
+	border-bottom: 1px solid $midblue;
+	border-collapse:collapse;
+	padding: 0.5em 0.5em 0.5em;
+}
+
+body {
+	text-align: center;
+	font: 1em/1.5 Georgia, serif;
+	color: #black;
+	background:$midblue
+}
+*/

@@ -1,1 +1,127 @@
 //python style sheet
+
+@import "compass/css3"; //includes mixins for writing cross-browser CSS3 rules
+@import "compass/reset"; //resets page style to defaults
+
+/*
+$color1: rgba(195, 247, 58, 1); //Green Lizard #C3F73A Lime
+$color2: rgba(149, 224, 108, 1); //Pistachio #95E06C Green
+$color3: rgba(104, 182, 132, 1); //Iguana #68B684 Darker Green
+$color4: rgba(9, 77, 146, 1); //Yale Blue #094D92 Blue
+$color5: rgba(28, 16, 24, 1); //Licorice #1C1018 Black-Purple
+$color6: rgba(251, 242, 192, 1); //Blond #FBF2C0 Light Tan Pink
+$color7: rgba(72, 57, 42, 1); //Taupe #48392A Tan Brown
+$color8: rgba(67, 40, 28, 1); //Bistre #43281C Dark Brown
+*/
+
+$color1: rgba(154, 210, 203, 1);
+$color2: rgba(215, 235, 186, 1);
+$color3: rgba(254, 255, 190, 1);
+$color4: rgba(235, 212, 148, 1);
+$color5: rgba(71, 40, 54, 1);
+
+$nav-border:$color1;
+$nav-cl:$color5;
+$body-cl:$color5;
+$hd-ft-cl:$color1;
+$bar-cl:$color5;
+$title-cl:$color3;
+
+//Include padding and border in the element's total width and height
+
+* {
+    box-sizing: border-box;
+}
+
+//Make a navigation bar:
+
+	.nav {
+		background-color: $nav-cl;
+		font-family: arial, tahoma;
+		font-weight: bold;
+		border-bottom: 2px solid $nav-border;
+		border-top: 2px solid $nav-border;
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			border-right: 2px solid $nav-border;
+			float: left;
+		}
+
+		li:last-child {
+			border-left: 2px solid $nav-border;
+			float: right;
+		}
+
+		a {
+			height: 40px;
+			color: white;
+			display: block;
+			padding: 8px;
+		}
+
+		/* Change the link color to #111 (black) on hover */
+		li a:hover {
+			text-decoration: none; //removes underline for links
+			background-color: $body-cl;
+			color:white;
+		}
+	}
+
+//All the boxes	that will contain website elements
+
+	.box {
+		border-radius: 25px;
+		color:white;
+		margin:auto;
+		background: $title-cl;
+		padding: 20px 20px 20px;
+		display: inline-block;
+	}
+
+//Header, footer, bar (section divider) styling
+
+.header,
+.footer {
+    background: $hd-ft-cl;
+    padding: 1em 1em 1em;
+}
+
+.bar {
+    height: 40px;
+    background: $bar-cl;
+    margin: auto;
+}
+
+//Styling for avatar in header
+
+.avatar {
+    @include box-shadow(0 0 10px 4px $nav-cl, 0 0 12px 6px $hd-ft-cl, 0 0 14px 10px $color2);
+    @include border-radius(50px); // half the avatar size
+    width: 150px;
+    height: 150px;
+}
+
+//Making main body formatting
+
+/*
+section {
+	background-color: $midblue;
+	border-top: 1px solid $midblue;
+	border-bottom: 1px solid $midblue;
+	border-collapse:collapse;
+	padding: 0.5em 0.5em 0.5em;
+}
+
+body {
+	text-align: center;
+	font: 1em/1.5 Georgia, serif;
+	color: #black;
+	background:$midblue
+}
+*/
