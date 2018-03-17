@@ -23,63 +23,158 @@
     <div class="bar"></div>
 	
 		<header class="header">
-			<h1><font size="6"> 
-				Hello, I'm Michael Johnson.
-			</font><br><br>
-			
-			<img src="images/johnson_michael.jpg" width="50%" height="50%" class="avatar" />
-			<br><br>
-				I'm a former engineer, science educator, 
-				forever learner, and an aspiring developer.
-			</h1>
+
+				<h1 class="box">
+				Project 2: SASSy Calendar Remake	
+				</h1><br><br>
+				
+				<img src="images/johnson_michael.jpg" width="50%" height="50%" class="avatar" />
+				<br><br>
+
+					<h1>Hello, I'm Michael Johnson.</h1>
+					<h2 id="tagline">I'm a former engineer, science educator, 
+						forever learner, aspiring developer.
+					</h2></h1>
 
 		</header>
-    <div class="bar"></div>
 
-		<section>
-		<div class="rcorners">
-		<h2>Process Flow</h2>
-		<h3 style="line-height:30px; padding: 0px 20px 0px" align=left>
-		<ol>
-			<li>Original Calendar</li>
-			<li>Separated CSS into Separate File</li>
-			<li>Converted CSS into SASS with Compass</li>
-			<li>Changed SASS to make New Calendar</li>
-		</ol>
-		</h3>
-
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home/About Me</a></li>
+				<li><a href="git-games.html">P1: Git'n Asteroids</a></li>
+				<li><a href="calendars.html">P2: SASSy Calendars</a></li>
+				<li><a href="classroom.html">P3: Classroom Pages</a></li>
+				<li><a href="python.html">P4: Python Trinkets</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
 		</div>
 
+		<section>
+		
+		<div class="rcorners">
+			<h2>Process Flow</h2>
+			<h3 style="line-height:30px; padding: 0px 20px 0px" align=left>
+			<ol>
+				<li><a href="#original">Original Calendar</a></li>
+				<li><a href="#css">Separated CSS into Separate File</a></li>
+				<li><a href="#sass">Converted CSS into SASS with Compass</a></li>
+				<li><a href="#new">Changed SASS to make New Calendar</a></li>
+			</ol>
+			</h3>
+		</div>
+		
+		<div class="describe">
+				
+			<h1>CSS and HTML Decoupling with 
+			<a href="https://www.edx.org/course/programming-web-javascript-pennx-sd4x">Edx</a>
+			</h1>
+			
+			<p>The first homework assigntment in the course <a href="https://www.edx.org/course/programming-web-javascript-pennx-sd4x">
+			PennX: SD4x - Programming for the Web with JavaScript</a> from Edx,</p>
+
+		</div>
+		
 		<h2>Old Calendar &nbsp &nbsp &nbsp >>>> &nbsp &nbsp &nbsp New Calendar</h2>
-		<p>Explain the process</p>
-		<ul class="calendars">
-				<li><a href="images/old-calendar.png"><div class="old-box"><img src="images/old-calendar.png"></div></a></li>
-				<li><a href="images/new-calendar.png"><div class="new-box"><img src="images/new-calendar.png"></div></a></li>
+		
+		<ul>
+				<a href="images/old-calendar.png" target="_blank"><div class="box"><li><img src="images/old-calendar.png"></div></a></li>
+				<a href="images/new-calendar.png" target="_blank"><div class="box"><li><img src="images/new-calendar.png"></div></a></li>
 		</ul>
-				<iframe src="https://trinket.io/embed/html/4ff3f3759f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+	<div class="bar" id="original"></div>
+		<div class="rcorners">
+			<h2>Process Flow</h2>
+			<h3 style="line-height:30px; padding: 0px 20px 0px" align=left>
+			<ol>
+				<strong><li><a href="#original">Original Calendar</a></li></strong>
+				<li><a href="#css">Separated CSS into Separate File</a></li>
+				<li><a href="#sass">Converted CSS into SASS with Compass</a></li>
+				<li><a href="#new">Changed SASS to make New Calendar</a></li>
+			</ol>
+			</h3>
+		</div>		
+
+		<div class="describe">
+			<h2>Original HTML Given</h2>
+			<iframe src="https://trinket.io/embed/html/4ff3f3759f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+		</div>
+		<br>
+		
 		</section>
 
-	<div class="bar"></div>
+	<section>
 
-		<section>
-		<h2>Calendar with Separate CSS</h2>
-		<img src="images/old-calendar.png">
-		<iframe src="https://trinket.io/embed/html/4ff3f3759f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-		
-	<div class="bar"></div>
+	<div class="bar" id="css"></div>
+	
+		<div class="rcorners">
+			<h2>Process Flow</h2>
+			<h3 style="line-height:30px; padding: 0px 20px 0px" align=left>
+			<ol>
+				<li><a href="#original">Original Calendar</a></li>
+				<strong><li><a href="#css">Separated CSS into Separate File</a></li></strong>
+				<li><a href="#sass">Converted CSS into SASS with Compass</a></li>
+				<li><a href="#new">Changed SASS to make New Calendar</a></li>
+			</ol>
+			</h3>
+		</div>		
 
-		<section>
-		<h2>Calendar with SASS Creating CSS</h2>
-		<img src="images/old-calendar.png">
-		<iframe src="https://trinket.io/embed/html/4ff3f3759f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-		
-	<div class="bar"></div>
+		<div class="describe">
 
-		<section>
-		<h2>Restyled Calendar with SASS</h2>
-		<img src="images/new-calendar.png">
-		<iframe src="https://trinket.io/embed/html/4ff3f3759f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+			<h2 id="css">Calendar with Separate CSS</h2>
+			<iframe src="https://trinket.io/embed/html/7b22742a87" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+		</div>
+		<br>
+
+	</section>
+	<section>
+	
+	<div class="bar" id="sass"></div>
+		<div class="rcorners">
+			<h2>Process Flow</h2>
+			<h3 style="line-height:30px; padding: 0px 20px 0px" align=left>
+			<ol>
+				<li><a href="#original">Original Calendar</a></li>
+				<li><a href="#css">Separated CSS into Separate File</a></li>
+				<strong><li><a href="#sass">Converted CSS into SASS with Compass</a></li></strong>
+				<li><a href="#new">Changed SASS to make New Calendar</a></li>
+			</ol>
+			</h3>
+		</div>
+		<br>
+
+		<div class="describe">
+
+			<h2>Calendar with SASS Creating CSS</h2>
+			<iframe src="https://trinket.io/embed/html/0924c5b41f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+		</div>
+		<br>
+			
+	<div class="bar" id="new"></div>
+		<div class="rcorners">
+			<h2>Process Flow</h2>
+			<h3 style="line-height:30px; padding: 0px 20px 0px" align=left>
+			<ol>
+				<li><a href="#original">Original Calendar</a></li>
+				<li><a href="#css">Separated CSS into Separate File</a></li>
+				<li><a href="#sass">Converted CSS into SASS with Compass</a></li>
+				<strong><li><a href="#new">Changed SASS to make New Calendar</a></li></strong>
+			</ol>
+			</h3>
+		</div>		
+		<br>
 		
+		<section>
+
+		<div class="describe">
+
+			<h2>Restyled Calendar with SASS</h2>
+			<iframe src="https://trinket.io/embed/html/21012aad63" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+		</div>
+		<br>
+			
     <div class="bar"></div>
 		<footer class="footer">
 			<br><div id="contact">

@@ -15,7 +15,55 @@ $color3: rgba(148, 168, 154, 1);
 $color4: rgba(199, 172, 146, 1);
 $color5: rgba(164, 74, 63, 1);
 
-$box-width:600px;
+$nav-border:$color2;
+$nav-cl:$color3;
+$hd-ft-cl:$color5;
+$body-cl:$color2;
+$bar-cl:$color5;
+$title-cl:#eaeaea;
+
+
+$box-width:45%;
+
+//Make a navigation bar:
+
+	.nav {
+		background-color: $nav-cl;
+		font-family: arial, tahoma;
+		font-weight: bold;
+		border-bottom: 2px solid $nav-border;
+		border-top: 2px solid $nav-border;
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			border-right: 2px solid $nav-border;
+			float: left;
+		}
+
+		li:last-child {
+			border-left: 2px solid $nav-border;
+			float: right;
+		}
+
+		a {
+			height: 40px;
+			color: $hd-ft-cl;
+			display: block;
+			padding: 8px;
+		}
+
+		/* Change the link color to #111 (black) on hover */
+		li a:hover {
+			text-decoration: none; //removes underline for links
+			background-color: $body-cl;
+			color:$color5;
+		}
+	}
 
 html {
 	h1, h2, h3 {
@@ -27,7 +75,7 @@ html {
 
 .header,
 .footer {
-    background: $color5;
+    background: $hd-ft-cl;
 }
 
 .bar {
@@ -71,7 +119,7 @@ section {
     @include box-shadow(0 0 0px 3px $shadow-color, 0 0 0 4px $inner-color, 0 0 4px 6px $outer-color);
     @include border-radius(50px); // half the avatar size
     width: 125px;
-    height: 125px;
+	height: 125px;
 }
 
 //why does is it ".header" and .avatar but just, h1, "body" and a?
@@ -148,22 +196,36 @@ img {
 	color:#000000;
 }
 
-.old-box {
+.describe {
 	border-radius: 25px;
-	background: #eaeaea;
-	max-width:$box-width;
+	background: $color1;
 	margin: auto;
-	padding: 20px 20px 20px 20px;
+	width: 95%
+	padding: 0px 0px 5px 15px;
 	color:#000000;
 }
 
-.new-box {
+
+.box {
 	border-radius: 25px;
 	background: #eaeaea;
+	display: inline-block;
 	max-width:$box-width;
-	margin: auto;
+	margin: 1%;
 	padding: 20px 20px 20px 20px;
-	color:#000000;
+	color:#000000;	
+	       &:hover {
+            @include scale(1.1);
+			@include transition(all .15s ease);
+            color: grey;
+			text-shadow: 0px 0px 10px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.box {
+        max-width: 100%;
+    }
 }
 
 #contact {
