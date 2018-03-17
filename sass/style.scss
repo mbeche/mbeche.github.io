@@ -14,6 +14,11 @@ $lightblue: rgba(191, 219, 247, 1);
 $darkblue: rgba(5, 60, 94, 1);
 $midblue: rgba(31, 122, 140, 1);
 $red: rgba(219, 34, 42, 1);
+
+//Include padding and border in the element's total width and height
+* {
+    box-sizing: border-box;
+}
 	  
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -25,22 +30,6 @@ $red: rgba(219, 34, 42, 1);
 .carousel {
 	max-width: 600px;
 	margin: auto;
-}
-
-table {
-	table-layout: fixed;
-	border: 10px;
-	display: block;
-}
-
-td:nth-child(1) {
-	width: 50%;
-	padding: 10px 10px 10px 10px;
-}
-
-td:nth-child(2) {
-	width: 50%;
-	padding: 10px 10px 10px 10px;
 }
 
 .header-box {
@@ -65,8 +54,22 @@ td:nth-child(2) {
 	border-radius: 25px;
 	background: #e6e6ff;
 	@include inline-block();
-	max-width: 50%;
+	max-width: 30%;
+	margin: .5em;
 	padding: 5px 20px 5px; 
+}
+
+@media only screen and (max-width: 600px) {
+	.body-box {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+	.body-box {
+        max-width: 45%;
+    }
 }
 
 .rcorners {
@@ -80,7 +83,6 @@ td:nth-child(2) {
 }
 
 html {
-
 	h1, h2, h3 {
 		font-family: Bitter, Georgia, serif;
 		padding: 0 1em;
@@ -96,7 +98,6 @@ html {
 		h3 {
 			font-size: 2em;
 		}
-
 	}
 }
 
@@ -113,30 +114,15 @@ html {
     margin-left: auto;
 }
 
-.content,
-.footer {
-    padding: .5em 0 0.5em;
-}
- 
-//this would not be allowed in CSS, it would need to be split into two
-
-.header {
+.footer, .header {
     padding: 1em 1em 1em;
-    h1 {
-		color:black;
-		font-style: italic;
-		font-size: 2em;
-    }
 }
-
-//code to make my avatar, there are three colors to the shadow-color
-//the border radius rounds the corner of the image
 
 .avatar {
-    @include box-shadow(0 0 0px 3px $shadow-color, 0 0 0 4px $inner-color, 0 0 4px 6px $outer-color);
+    @include box-shadow(0 0 10px 4px $darkblue, 0 0 12px 6px $red, 0 0 14px 10px $maroon);
     @include border-radius(50px); // half the avatar size
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 
 //why does is it ".header" and .avatar but just, h1, "body" and a?
@@ -145,8 +131,9 @@ html {
 section {
 	background-color: $midblue;
 	border-top: 1px solid $midblue;
-    border-bottom: 1px solid $midblue;
-	padding: 1em 1em 1em;
+	border-bottom: 1px solid $midblue;
+	border-collapse:collapse;
+	padding: 0.5em 0.5em 0.5em;
 }
 
 body {

@@ -1,0 +1,11 @@
+/* line 1, ../sass/test.scss */
+body {
+  background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 6, ../sass/test.scss */
+  body {
+    background-color: green;
+  }
+}
