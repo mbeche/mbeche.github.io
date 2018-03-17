@@ -23,9 +23,9 @@
     <div class="bar"></div>
     <header class="header">
 
-			<h1 class="header-box"><font size="6" style="color:white;"> 
+			<h1 class="box">
 				Hello, I'm Michael Johnson.
-			</font></h1><br><br>
+			</h1><br><br>
 			
 			<img src="images/johnson_michael.jpg" width="50%" height="50%" class="avatar" />
 			<br><br>
@@ -34,12 +34,20 @@
 			</h1>
 
 	</header>
-    <div class="bar"></div>
-
+	
+	<div class="nav">
+		<ul>
+			<li><a href="index.html">Home/About Me</a></li>
+			<li><a href="git-games.html">P1: Git'n Asteroids</a></li>
+			<li><a href="calendars.html">P2: SASSy Calendars</a></li>
+			<li><a href="classroom.html">P3: Classroom Pages</a></li>
+			<li><a href="python.html">P4: Python Trinkets</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+	</div>
+	
 	<section>
-		<div class="head-box">
-		<h2>My Journey</h2>
-		</div>
+		<h1 class="box">My Journey</h1>
 		<br>
 	
 					<div class="body-box">
@@ -85,9 +93,8 @@
 						find a sampling of projects I've worked on.
 						</p>
 					</div>
-	</section>
-
-	<section>
+	
+	<div class="box">
 		<h1>Sample Projects</h1>
 		<!--Note to viewer: this code was copied from
 		https://www.w3schools.com/bootstrap/bootstrap_carousel.asp
@@ -102,12 +109,15 @@
 
 		  <!-- Wrapper for slides -->
 		  <div class="carousel-inner">
+		  
 			<div class="item active">
 			  <img src="images/git-asteroids.jpg" alt="Git Asteroids Screenshot">
 				<div class="carousel-caption">
-					<div class="rcorners">
-						<h3>Project 1: Git'n Asteroids</h3>
-						<p>Using version control to find bugs in code and to collaborate</p>
+					<div class="project-box">
+						<a href="git-games.html">
+							<h3>Project 1: Git'n Asteroids</h3>
+							<p>Using version control to find bugs in code and to collaborate</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -115,9 +125,11 @@
 			<div class="item">
 			  <img src="images/sass-calendar.JPG" alt="Calendar Sample">
 				<div class="carousel-caption">
-					<div class="rcorners">
-						<h3>Project 2: Sassy Calendar</h3>
-						<p>Separating CSS from HTML, porting to SASS, then restyling</p>
+					<div class="project-box">
+						<a href="calendars.html">
+							<h3>Project 2: Sassy Calendar</h3>
+							<p>Separating CSS from HTML, porting to SASS, then restyling</p>
+						<a>
 					</div>
 				</div>
 			</div>
@@ -125,10 +137,12 @@
 			<div class="item">
 			  <img src="images/education-page.JPG" alt="Course Science Blog">
 				<div class="carousel-caption">
-					<div class="rcorners">
-						<h3>Project 3: Science v. Web Content</h3>
-						<p>As a university instructor I create web content for my students 
-						in physics and physical science</p>
+					<div class="project-box">
+						<a href="classroom.html">
+							<h3>Project 3: Science v. Web Content</h3>
+							<p>As a university instructor I create web content for my students 
+							in physics and physical science</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -144,37 +158,14 @@
 			<span class="sr-only">Next</span>
 		  </a>
 		</div>
-	</section>
 	</div>
-
-	<section>
-	<h1>Testing</h1>
-	<p>Just putting a filler in<p>
 	</section>
 
 
-	<!--<section class="content">
-      <h1 class="dribble">Latest Dribbles</h1>
-      <div class="carousel">
-        <div class="shots-container">
-          <ul class="shots">
-            <li><img src="images/loading.gif" alt"Loading" /></li>
-            <li><i>Sorry, but the tutorial used to create this website was out of date
-              and the API access for <a href="https://dribbble.com/">Dribble.com</a>
-              has changed. In place here should be a side scrolling carousel showing
-              the top 10 shots from my dribble page.</i>
-          </ul>
-        </div>
-        <span class="mask mask-right"></span>
-        <span class="mask mask-left"></span>
-      </div>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script src="javascripts/dribbble.js"></script>
-      <p>&larr; scroll to view &rarr;</p>
-    </section>-->
+
     <div class="bar"></div>
 	<footer class="footer">
-		<br><div id="contact">
+		<br id="contact"><div id="contact">
 		<h1>Find Me, Friend Me,<br> or Hire Me</h1>
 			<p>Thank you for visiting. I hope you found my portfolio interesting. 
 			<br>You can contact me via:</p>

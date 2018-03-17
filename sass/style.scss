@@ -15,11 +15,53 @@ $darkblue: rgba(5, 60, 94, 1);
 $midblue: rgba(31, 122, 140, 1);
 $red: rgba(219, 34, 42, 1);
 
+$nav-border:$midblue;
+$nav-background:$darkblue;
+
 //Include padding and border in the element's total width and height
 * {
     box-sizing: border-box;
 }
-	  
+
+//Make a navigation bar:
+.nav {
+	background-color: $nav-background;
+	font-family: arial, tahoma;
+	font-weight: bold;
+	border-bottom: 2px solid $nav-border;
+	border-top: 2px solid $nav-border;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		border-right: 2px solid $nav-border;
+		float: left;
+	}
+
+	li:last-child {
+		border-left: 2px solid $nav-border;
+		float: right;
+	}
+
+	a {
+		height: 40px;
+		color: white;
+		display: block;
+		padding: 8px;
+	}
+
+	/* Change the link color to #111 (black) on hover */
+	li a:hover {
+		text-decoration: none; //removes underline for links
+		background-color: $midblue;
+		color:white;
+	}
+}
+
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
       margin: auto;
@@ -32,27 +74,21 @@ $red: rgba(219, 34, 42, 1);
 	margin: auto;
 }
 
-.header-box {
-	border-radius: 25px;
-	background: $maroon;
-	color:white;
-	max-width: 500px;
-	padding: 15px 0px 15px;
-	margin:auto;
-}
+//my box scheme is way too complicated.
+//I can streamline this with embedded boxes
 
-.head-box {
+.box {
 	border-radius: 25px;
-	background: $maroon;
 	color:white;
-	max-width: 300px;
-	padding: 5px 0px 10px; 
 	margin:auto;
+	background: $maroon;
+	padding: 20px 20px 20px;
+	display: inline-block;
 }
 
 .body-box {
 	border-radius: 25px;
-	background: #e6e6ff;
+	background: $lightblue;
 	@include inline-block();
 	max-width: 30%;
 	margin: .5em;
@@ -72,14 +108,19 @@ $red: rgba(219, 34, 42, 1);
     }
 }
 
-.rcorners {
+.project-box {
 	opacity: 0.9;
 	border-radius: 25px;
 	background: $lightblue;
 	max-width:520px;
 	margin: auto;
 	padding: 2px 0px 15px 0px;
-	color:#000000;
+	
+	a {
+		text-decoration: none; //removes underline for links
+		display: inline-block;
+		color:black;
+	}
 }
 
 html {
@@ -143,14 +184,17 @@ body {
 	background:$midblue
 }
 
-a {
-  text-decoration: none; //removes underline for links
+
+a {	
+	text-decoration: none; //removes underline for links
 }
 
 img {
   max-width: 100%;
   height: auto; //responsive image size
 }
+
+//All of the following is used for the footer
 
 //Icons for footer
 @font-face {
@@ -216,7 +260,8 @@ img {
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
-		
+
+//I need to figure out how to get links to apply to entire box (above)		
 .social {
 	
     margin:2em 0;
