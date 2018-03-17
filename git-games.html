@@ -3,95 +3,91 @@
 <html>
 	<head>
 	<title>Git Asteroids</title>
-	<meta name ="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-		<style>
-			body {
-				text-align: Left;
-				font: 1em/1.5 Georgia, serif;
-				color: #333;
-			}
-			html {
-				line-height: 1;
-			}
-			
-			h1 {
-				font-family: Bitter, Georgia, serif;
-				font-size: 2em;
-				LINE-HEIGHT:6px; 
-				padding: 0.5em 0 0.5em;
-			}
-			
-			h2 {
-				font-family: Bitter, Georgia, serif;
-				font-size: 1.5em;
-				padding: 0 0 0 0;
-			}
 
-			h3 {
-				font-family: Bitter, Georgia, serif;
-				font-size: 1em;
-				LINE-HEIGHT:6px;
-				padding: 0 0 0 0;
-			}
-			
-			blockquote {
-				background: #dcd1e1;
-				border-left: 10px solid #5A0B4D;
-				margin: 1.5em 10px;
-				padding: 0.5em 10px;
-				quotes: "\201C""\201D""\2018""\2019";
-				FONT-SIZE:14px; 
-				font-style: italic; 
-				COLOR: Black; 
-				LINE-HEIGHT:16px; 
-				FONT-FAMILY:Helvetica,"Arial Narrow",sans-serif;
-			}
-			
-			code {
-				FONT-SIZE:12px;
-			}
-			
-			mark {
-				background-color: #ccf5ff;
-				color: black;
-			}
-			
-			.rcorners {
-				border-radius: 25px;
-				background: #e6e6ff;
-				padding: 1px 20px 1px; 
-				 
-			}
-		</style>
+		<link href="stylesheets/games-style.css" type="text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		<title>My Portfolio</title>
+
+		<!-- using viewport meta tag for responsive design-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<meta name ="viewport" content="width=device-width, initial-scale=1">
+		
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
 	</head>
 	
-	<body style="background-color: lightblue;">
-		<h1>Using Git and GitHub</h1>		
+	<body>
+	
+			<div class="bar"></div>
 
-		<div class="rcorners">
-		<h2 style="LINE-HEIGHT:22px;">Learning from the free <a href="https://www.udacity.com/course/ud775">online course</a> offered by Udacity</h2>
-			<p>This course was well designed and engaging to complete. The instructors, Caroline and
-			Sarah, helped guide me through understanding not only how to use Git and GitHub for
-			version control for solo and collaborative projects, but also the <i>importance</i> of using
-			some type of version control.</p>
-		</div>
+		<header class="header">
+
+				<h1 class="box">
+				Project 1: Learning Git and GitHub
+				</h1><br><br>
+				
+				<img src="images/johnson_michael.jpg" width="50%" height="50%" class="avatar" />
+				<br><br>
+
+					<h1>Hello, I'm Michael Johnson.</h1>
+					<h2 id="tagline">I'm a former engineer, science educator, 
+						forever learner, aspiring developer.
+					</h2></h1>
+
+		</header>
+
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Home/About Me</a></li>
+					<li><a href="git-games.html">P1: Git'n Asteroids</a></li>
+					<li><a href="calendars.html">P2: SASSy Calendars</a></li>
+					<li><a href="classroom.html">P3: Classroom Pages</a></li>
+					<li><a href="python.html">P4: Python Trinkets</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</ul>
+			</div>
+			
+	<section>
+	
+		<h1>Learning Git and GitHub from <a href="https://www.udacity.com/course/ud775">Udacity</a></h1>
+
+			<div class="body-box">
+			<h2>Course Recap</h2>
+				<p>This course was well designed and engaging to complete. The instructors, Caroline and
+				Sarah, helped guide me through understanding not only how to use Git and GitHub for
+				version control for solo and collaborative projects, but also the <i>importance</i> of using
+				some type of version control.</p>
+			</div>
 		
-		<h2>Table of Contents</h2>
-		
-		<div class="rcorners">
-			<ul>
-				<li><a href="#refl">In Reflection</a>:
-				Excerpts from written reflections taken while completing course content.
-				</li>
-				<li><a href="#cook">Pushing Recipes:<a/> Using Git/GitHub to fork, pull request, and more</li>
-				<li><a href="#asteroids">Let's Play a Game:<a/> Using Git to figure out where bugs were
-				introduced in a JavaScript based game. Then using JavaScript to change the difficulty of the game.</li>
-			</ul>
-		</div>
-		
-		<h2 id="refl">In Reflection</h2>	
-		<div class="rcorners">
+			<div class="body-box">
+				<h2>Table of Contents</h2>
+				<ul>
+					<li class="box"><a href="#refl"><h3>In Reflection:</h3>
+					Excerpts from written reflections taken while completing course content.
+					</li></a>
+
+					<li class="box"><a href="#cook"><h3>Pushing Recipes:</h3>Using Git/GitHub to fork, pull request, and more
+					</li></a>
+
+					<li class="box"><a href="#asteroids"><h3>Let's Play a Game:</h3>Using Git to fix bugs then using JavaScript to change the difficulty of the game.
+					</li></a>
+				</ul>
+			</div>
+
+	</section>
+
+			<div class="bar"><h2 id="refl">In Reflection</h2></div>
+
+	<section>
+			
+		<div class="box">
 			<p>Throughout the course I wrote prompted reflections on what were were learning
 			and the merits of various aspects of the version control software. Here are some important
 			excerpts I feel exemplify my learning:</p>
@@ -101,6 +97,7 @@
 				How using version control allows us to be more confident and innovative
 				</b></span>
 			<br>
+			
 				<span style="font-size:14px; LINE-HEIGHT:18px;">
 				By using Git, we obtain freedom to try big changes without worrying about
 				how to revert back to previous versions. This way we don't have to worry about
@@ -177,10 +174,18 @@
 			<b>view all of my reflections</b> from this course by accessing them
 			through my <b><a href="https://github.com/mbeche/reflections">GitHub</a></b>.</p>
 		</div>
-		
-		<h2 id="cook">Pushing Recipes:</h2>
-		
-		<h2 id="asteroids">Pushing Recipes:</h2>
+
+	</section>
+
+			<div class="bar"><h2 id="cook">Pushing Recipes:</h2></div>
+
+	<section>
+
+	</section>
+
+			<div class="bar"><h2 id="asteroids">Let's Play a Game</h2></div>
+
+	<section>
 
 		<div class="rcorners">
 		<h3>Version 1 Normal Mode</h3>
@@ -213,5 +218,27 @@
 			to your velocity. Try speeding up and shooting/forward backwards to see what I mean:</p>
 			<p align="center"><iframe src="asteroids-easy/index.html" width="800" height="580" style="background-color: white;"></iframe></p>
 		</div>
+	</section>
+	
+			<div class="bar"></div>
+		
+			<footer class="footer">
+				<div id="contact">
+					<br>
+					<h1>Find Me, Friend Me,<br> or Hire Me</h1>
+						<p>Thank you for visiting. I hope you found my portfolio interesting. 
+						<br>You can contact me via:</p>
+					<br>
+				</div>
+				<ul class="social">
+					<li class="icon-linkedin" id="linked"><a href="https://www.linkedin.com/in/mbjohnsonche/">LinkedIn</a></li>
+					<li class="icon-envelop" id="email"><a href="mailto:mb.johnsonbece@gmail.com">e-mail</a></li>
+					<li class="icon-mobile" id="phone"><a href="www.google.com">360-621-9773</a></li>
+				</ul>
+			</footer>   
+		
+		<div class="bar"></div>
+
+	
 	</body>
 </html>

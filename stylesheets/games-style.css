@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,106 +64,198 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 25, ../sass/python-style.scss */
+/* line 27, ../sass/games-style.scss */
+blockquote {
+  background: #dcd1e1;
+  border-left: 10px solid #5A0B4D;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’";
+  FONT-SIZE: 14px;
+  font-style: italic;
+  COLOR: Black;
+  LINE-HEIGHT: 16px;
+  FONT-FAMILY: Helvetica,"Arial Narrow",sans-serif;
+}
+
+/* line 40, ../sass/games-style.scss */
+code {
+  FONT-SIZE: 12px;
+}
+
+/* line 44, ../sass/games-style.scss */
+mark {
+  background-color: #ccf5ff;
+  color: black;
+}
+
+/* line 49, ../sass/games-style.scss */
+.rcorners {
+  border-radius: 25px;
+  background: #bfdbf7;
+  padding: 1px 20px 1px;
+}
+
+/* line 58, ../sass/games-style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 31, ../sass/python-style.scss */
+/* line 64, ../sass/games-style.scss */
 html h1, html h2, html h3 {
   font-family: Bitter, Georgia, serif;
   padding: 0 1em;
 }
-/* line 36, ../sass/python-style.scss */
+/* line 69, ../sass/games-style.scss */
 html h1 h1, html h2 h1, html h3 h1 {
   font-size: 3em;
 }
-/* line 40, ../sass/python-style.scss */
+/* line 73, ../sass/games-style.scss */
 html h1 h2, html h2 h2, html h3 h2 {
   font-size: 2em;
 }
-/* line 44, ../sass/python-style.scss */
+/* line 77, ../sass/games-style.scss */
 html h1 h3, html h2 h3, html h3 h3 {
   font-size: 2em;
 }
 
-/* line 52, ../sass/python-style.scss */
+/* line 85, ../sass/games-style.scss */
 .nav {
-  background-color: #1c1018;
+  background-color: #472836;
   font-family: arial, tahoma;
   font-weight: bold;
-  border-bottom: 2px solid #95e06c;
-  border-top: 2px solid #95e06c;
+  border-bottom: 2px solid #d7ebba;
+  border-top: 2px solid #d7ebba;
   /* Change the link color to #111 (black) on hover */
 }
-/* line 59, ../sass/python-style.scss */
+/* line 92, ../sass/games-style.scss */
 .nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 65, ../sass/python-style.scss */
+/* line 98, ../sass/games-style.scss */
 .nav li {
-  border-right: 2px solid #95e06c;
+  border-right: 2px solid #d7ebba;
   float: left;
 }
-/* line 70, ../sass/python-style.scss */
+/* line 103, ../sass/games-style.scss */
 .nav li:last-child {
-  border-left: 2px solid #95e06c;
+  border-left: 2px solid #d7ebba;
   float: right;
 }
-/* line 75, ../sass/python-style.scss */
+/* line 108, ../sass/games-style.scss */
 .nav a {
   height: 40px;
-  color: #95e06c;
+  color: #d7ebba;
   display: block;
   padding: 8px;
 }
-/* line 83, ../sass/python-style.scss */
+/* line 116, ../sass/games-style.scss */
 .nav li a:hover {
   text-decoration: none;
-  background-color: #094d92;
-  color: white;
+  background-color: #d7ebba;
+  color: #472836;
 }
 
-/* line 92, ../sass/python-style.scss */
+/* line 125, ../sass/games-style.scss */
 .box {
   border-radius: 25px;
-  color: #1c1018;
+  color: #472836;
   margin: auto;
-  background: #95e06c;
+  margin: 0.5em;
+  background: #bfdbf7;
   padding: 20px 20px 20px;
   display: inline-block;
 }
 
-/* line 103, ../sass/python-style.scss */
+/* line 136, ../sass/games-style.scss */
+.body-box {
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+  max-width: 75%;
+  border-radius: 25px;
+  background: #bfdbf7;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: .5em;
+  padding: 0px 10px 10px 10px;
+}
+/* line 145, ../sass/games-style.scss */
+.body-box a {
+  float: middle;
+  color: #472836;
+  display: block;
+  padding: 0px 10px 20px 10px;
+  overflow: auto;
+}
+/* line 153, ../sass/games-style.scss */
+.body-box .box {
+  width: 80%;
+  background-color: #feffbe;
+  margin: 0.5em;
+  padding: 0px 0px 0px 0px;
+}
+/* line 159, ../sass/games-style.scss */
+.body-box .box a:hover {
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: grey;
+  text-shadow: 0px 0px 10px;
+  text-decoration: none;
+  color: #472836;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 172, ../sass/games-style.scss */
+  .body-box {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* line 179, ../sass/games-style.scss */
+  iframe {
+    max-width: 100%;
+  }
+}
+/* line 186, ../sass/games-style.scss */
 .header,
 .footer {
-  background: #094d92;
+  text-align: center;
+  background: #feffbe;
   padding: 1em 1em 1em;
-  color: #c3f73a;
+  color: #472836;
   font-style: italic;
 }
-/* line 109, ../sass/python-style.scss */
+/* line 193, ../sass/games-style.scss */
 .header #tagline,
 .footer #tagline {
-  color: #c3f73a;
+  color: #472836;
   font-style: normal;
 }
 
-/* line 115, ../sass/python-style.scss */
+/* line 199, ../sass/games-style.scss */
 .bar {
-  height: 40px;
-  background: #1c1018;
+  overflow: auto;
+  color: #feffbe;
+  height: 80px;
+  background: #472836;
   width: 100%;
   margin: auto;
 }
 
-/* line 124, ../sass/python-style.scss */
+/* line 210, ../sass/games-style.scss */
 .avatar {
-  -moz-box-shadow: 0 0 10px 4px #1c1018, 0 0 12px 6px #094d92, 0 0 14px 10px #95e06c;
-  -webkit-box-shadow: 0 0 10px 4px #1c1018, 0 0 12px 6px #094d92, 0 0 14px 10px #95e06c;
-  box-shadow: 0 0 10px 4px #1c1018, 0 0 12px 6px #094d92, 0 0 14px 10px #95e06c;
+  -moz-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
+  -webkit-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
+  box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -170,16 +263,16 @@ html h1 h3, html h2 h3, html h3 h3 {
   height: 150px;
 }
 
-/* line 134, ../sass/python-style.scss */
+/* line 218, ../sass/games-style.scss */
 section {
-  background-color: #094d92;
-  border-top: 1px solid #094d92;
-  border-bottom: 1px solid #094d92;
+  background-color: #d7ebba;
+  border-top: 1px solid #d7ebba;
+  border-bottom: 1px solid #d7ebba;
   border-collapse: collapse;
-  padding: 0.5em 0.5em 0.5em;
+  padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
-/* line 142, ../sass/python-style.scss */
+/* line 226, ../sass/games-style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
@@ -192,7 +285,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-/* line 161, ../sass/python-style.scss */
+/* line 245, ../sass/games-style.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -207,60 +300,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 176, ../sass/python-style.scss */
+/* line 260, ../sass/games-style.scss */
 .icon-envelop:before {
   content: "\e945";
 }
 
-/* line 179, ../sass/python-style.scss */
+/* line 263, ../sass/games-style.scss */
 .icon-mobile:before {
   content: "\e958";
 }
 
-/* line 182, ../sass/python-style.scss */
+/* line 266, ../sass/games-style.scss */
 .icon-linkedin:before {
   content: "\eac9";
 }
 
-/* line 186, ../sass/python-style.scss */
+/* line 270, ../sass/games-style.scss */
 #contact {
   background: #73A6AD;
   padding: 40px 20x 20px 20x;
   max-width: 520px;
   border-radius: 25px;
   margin: auto;
-  color: #1c1018;
+  color: #472836;
 }
 
-/* line 196, ../sass/python-style.scss */
+/* line 280, ../sass/games-style.scss */
 #linked {
-  background: #95e06c;
+  background: #68B684;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 202, ../sass/python-style.scss */
+/* line 286, ../sass/games-style.scss */
 #email {
-  background: #c3f73a;
+  background: #d7ebba;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 208, ../sass/python-style.scss */
+/* line 292, ../sass/games-style.scss */
 #phone {
-  background: #68b684;
+  background: #95E06C;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 215, ../sass/python-style.scss */
+/* line 299, ../sass/games-style.scss */
 .social {
   margin: 2em 0;
 }
-/* line 219, ../sass/python-style.scss */
+/* line 303, ../sass/games-style.scss */
 .social li {
   font-size: 1.5em;
-  color: #1c1018;
+  color: #472836;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -273,7 +366,7 @@ body {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 228, ../sass/python-style.scss */
+/* line 312, ../sass/games-style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -282,11 +375,11 @@ body {
   color: grey;
   text-shadow: 0px 0px 10px;
 }
-/* line 234, ../sass/python-style.scss */
+/* line 318, ../sass/games-style.scss */
 .social li:hover #phone #email #linked {
   background: #36454f;
 }
-/* line 239, ../sass/python-style.scss */
+/* line 323, ../sass/games-style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -295,7 +388,7 @@ body {
   top: 0m;
   left: 50%;
 }
-/* line 247, ../sass/python-style.scss */
+/* line 331, ../sass/games-style.scss */
 .social li a {
   display: block;
   color: inherit;

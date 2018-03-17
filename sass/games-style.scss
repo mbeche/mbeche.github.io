@@ -1,24 +1,57 @@
-//python style sheet
+//classroom style sheet
 
 @import "compass/css3"; //includes mixins for writing cross-browser CSS3 rules
 @import "compass/reset"; //resets page style to defaults
 
-$color1: rgba(195, 247, 58, 1); //Green Lizard #C3F73A Lime
-$color2: rgba(149, 224, 108, 1); //Pistachio #95E06C Green
-$color3: rgba(104, 182, 132, 1); //Iguana #68B684 Darker Green
-$color4: rgba(9, 77, 146, 1); //Yale Blue #094D92 Blue
-$color5: rgba(28, 16, 24, 1); //Licorice #1C1018 Black-Purple
-$color6: rgba(251, 242, 192, 1); //Blond #FBF2C0 Light Tan Pink
-$color7: rgba(72, 57, 42, 1); //Taupe #48392A Tan Brown
-$color8: rgba(67, 40, 28, 1); //Bistre #43281C Dark Brown
+$color1: rgba(154, 210, 203, 1);
+$color2: rgba(215, 235, 186, 1);
+$color3: rgba(254, 255, 190, 1);
+$color4: rgba(235, 212, 148, 1);
+$color5: rgba(71, 40, 54, 1);
+$maroon: rgba(163, 22, 33, 1);
+$color6: rgba(191, 219, 247, 1); //lightblue
+$color7: rgba(5, 60, 94, 1); //darkblue
+$midblue: rgba(31, 122, 140, 1);
+$red: rgba(219, 34, 42, 1);
 
 
 $nav-border:$color2;
 $nav-cl:$color5;
-$hd-ft-cl:$color4;
-$body-cl:$hd-ft-cl;
+$hd-ft-cl:$color3;
+$body-cl:$color2;
 $bar-cl:$color5;
-$title-cl:$color2;
+$title-cl:$color1;
+
+//Original CSS from HTML I wrote:
+			
+			blockquote {
+				background: #dcd1e1;
+				border-left: 10px solid #5A0B4D;
+				margin: 1.5em 10px;
+				padding: 0.5em 10px;
+				quotes: "\201C""\201D""\2018""\2019";
+				FONT-SIZE:14px; 
+				font-style: italic; 
+				COLOR: Black; 
+				LINE-HEIGHT:16px; 
+				FONT-FAMILY:Helvetica,"Arial Narrow",sans-serif;
+			}
+			
+			code {
+				FONT-SIZE:12px;
+			}
+			
+			mark {
+				background-color: #ccf5ff;
+				color: black;
+			}
+			
+			.rcorners {
+				border-radius: 25px;
+				background: $color6;
+				padding: 1px 20px 1px; 
+			}
+
 
 //Include padding and border in the element's total width and height
 
@@ -83,38 +116,91 @@ html	{
 		li a:hover {
 			text-decoration: none; //removes underline for links
 			background-color: $body-cl;
-			color:white;
+			color:$color5;
 		}
 	}
 
 //All the boxes	that will contain website elements
 
+.box {
+	border-radius: 25px;
+	color:$nav-cl;
+	margin: auto;
+	margin: 0.5em;
+	background: $color6;
+	padding: 20px 20px 20px;
+	display: inline-block;
+}
+
+
+.body-box {
+	@include transition(all .15s ease);
+	max-width: 75%;
+	border-radius: 25px;
+	background: $color6;
+	@include inline-block();
+	margin: .5em;
+	padding: 0px 10px 10px 10px;	
+
+	a {
+		float: middle;
+		color: $color5;
+		display: block;
+		padding: 0px 10px 20px 10px;
+		overflow: auto;
+	}
+	
 	.box {
-		border-radius: 25px;
-		color:$nav-cl;
-		margin: auto;
-		background: $title-cl;
-		padding: 20px 20px 20px;
-		display: inline-block;
+		width: 80%;
+		background-color: $hd-ft-cl;
+		margin: 0.5em;
+		padding: 0px 0px 0px 0px;
+		
+		a:hover {
+            @include scale(1.25);
+            color: grey;
+			text-shadow: 0px 0px 10px;
+			text-decoration: none; //removes underline for links
+			color:$color5;
+		}
+	}
+	
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.body-box {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+	iframe {
+        max-width: 100%;
+    }
 }
 
 //Header, footer, bar (section divider) styling
 
 .header,
 .footer {
-    background: $hd-ft-cl;
-    padding: 1em 1em 1em;
-	color: $color1;
+	text-align: center;
+	background: $hd-ft-cl;
+	padding: 1em 1em 1em;
+	color: $color5;
 	font-style: italic;
 		#tagline {
-			color: $color1;
+			color: $color5;
 			font-style: normal;
 		}
 }
 
 .bar {
-    height: 40px;
-    background: $bar-cl;
+	overflow: auto;
+	color: $hd-ft-cl;
+	height: 80px;
+	background: $bar-cl;
 	width: 100%;
 	margin: auto;
 }
@@ -129,14 +215,12 @@ html	{
 }
 
 //Making main body formatting
-
-
 section {
-	background-color: $color4;
-	border-top: 1px solid $color4;
-	border-bottom: 1px solid $color4;
+	background-color: $body-cl;
+	border-top: 1px solid $body-cl;
+	border-bottom: 1px solid $body-cl;
 	border-collapse:collapse;
-	padding: 0.5em 0.5em 0.5em;
+	padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
 body {
@@ -194,19 +278,19 @@ body {
 
 
 #linked {
-			background: $color2;
+			background: #68B684;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
 
 #email {
-			background: $color1;
+			background: $color2;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
 
 #phone {
-			background: $color3;
+			background: #95E06C;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
