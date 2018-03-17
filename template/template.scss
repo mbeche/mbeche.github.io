@@ -9,10 +9,10 @@ $color3: rgba(254, 255, 190, 1);
 $color4: rgba(235, 212, 148, 1);
 $color5: rgba(71, 40, 54, 1);
 
-$nav-border:$color2;
+$nav-border:$color1;
 $nav-cl:$color5;
-$hd-ft-cl:$color3;
-$body-cl:$color2;
+$hd-ft-cl:$color4;
+$body-cl:$hd-ft-cl;
 $bar-cl:$color5;
 $title-cl:$color1;
 
@@ -78,7 +78,7 @@ html	{
 		li a:hover {
 			text-decoration: none; //removes underline for links
 			background-color: $body-cl;
-			color:$color5;
+			color:white;
 		}
 	}
 
@@ -99,10 +99,10 @@ html	{
 .footer {
     background: $hd-ft-cl;
     padding: 1em 1em 1em;
-	color: $color5;
+	color: $color1;
 	font-style: italic;
 		#tagline {
-			color: $color5;
+			color: $color1;
 			font-style: normal;
 		}
 }
@@ -127,9 +127,9 @@ html	{
 
 
 section {
-	background-color: $body-cl;
-	border-top: 1px solid $body-cl;
-	border-bottom: 1px solid $body-cl;
+	background-color: $color4;
+	border-top: 1px solid $color4;
+	border-bottom: 1px solid $color4;
 	border-collapse:collapse;
 	padding: 0.5em 0.5em 0.5em;
 }
@@ -189,19 +189,19 @@ body {
 
 
 #linked {
-			background: #68B684;
-			padding: 20px 15px 20px 15px;
-			border-radius: 25px;
-}
-
-#email {
 			background: $color2;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
 
+#email {
+			background: $color1;
+			padding: 20px 15px 20px 15px;
+			border-radius: 25px;
+}
+
 #phone {
-			background: #95E06C;
+			background: $color3;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }

@@ -64,14 +64,14 @@ $nav-background:$darkblue;
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-      margin: auto;
+//	margin: auto;
 	  max-height: 378px;
 	  max-width: 600px;
 }
 
 .carousel {
 	max-width: 600px;
-	margin: auto;
+//	margin: auto;
 }
 
 //my box scheme is way too complicated.
@@ -80,7 +80,6 @@ $nav-background:$darkblue;
 .box {
 	border-radius: 25px;
 	color:white;
-	margin:auto;
 	background: $maroon;
 	padding: 20px 20px 20px;
 	display: inline-block;
@@ -113,7 +112,7 @@ $nav-background:$darkblue;
 	border-radius: 25px;
 	background: $lightblue;
 	max-width:520px;
-	margin: auto;
+//	margin: auto;
 	padding: 2px 0px 15px 0px;
 	
 	a {
@@ -152,7 +151,7 @@ html {
 .bar {
     height: 40px;
     background: $darkblue;
-    margin: auto;
+//    margin: auto;
 }
 
 
@@ -235,7 +234,7 @@ img {
 			max-width:520px;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
-			margin: auto;
+			margin: auto; //This margin: auto; actually does something
 			color: white;
 }
 

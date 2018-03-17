@@ -1,0 +1,307 @@
+/* line 5, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../sass/classroom-style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 26, ../sass/classroom-style.scss */
+html h1, html h2, html h3 {
+  font-family: Bitter, Georgia, serif;
+  padding: 0 1em;
+}
+/* line 31, ../sass/classroom-style.scss */
+html h1 h1, html h2 h1, html h3 h1 {
+  font-size: 3em;
+}
+/* line 35, ../sass/classroom-style.scss */
+html h1 h2, html h2 h2, html h3 h2 {
+  font-size: 2em;
+}
+/* line 39, ../sass/classroom-style.scss */
+html h1 h3, html h2 h3, html h3 h3 {
+  font-size: 2em;
+}
+
+/* line 47, ../sass/classroom-style.scss */
+.nav {
+  background-color: #472836;
+  font-family: arial, tahoma;
+  font-weight: bold;
+  border-bottom: 2px solid #d7ebba;
+  border-top: 2px solid #d7ebba;
+  /* Change the link color to #111 (black) on hover */
+}
+/* line 54, ../sass/classroom-style.scss */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 60, ../sass/classroom-style.scss */
+.nav li {
+  border-right: 2px solid #d7ebba;
+  float: left;
+}
+/* line 65, ../sass/classroom-style.scss */
+.nav li:last-child {
+  border-left: 2px solid #d7ebba;
+  float: right;
+}
+/* line 70, ../sass/classroom-style.scss */
+.nav a {
+  height: 40px;
+  color: #d7ebba;
+  display: block;
+  padding: 8px;
+}
+/* line 78, ../sass/classroom-style.scss */
+.nav li a:hover {
+  text-decoration: none;
+  background-color: #d7ebba;
+  color: #472836;
+}
+
+/* line 87, ../sass/classroom-style.scss */
+.box {
+  border-radius: 25px;
+  color: #472836;
+  margin: auto;
+  background: #9ad2cb;
+  padding: 20px 20px 20px;
+  display: inline-block;
+}
+
+/* line 98, ../sass/classroom-style.scss */
+.header,
+.footer {
+  background: #feffbe;
+  padding: 1em 1em 1em;
+  color: #472836;
+  font-style: italic;
+}
+/* line 104, ../sass/classroom-style.scss */
+.header #tagline,
+.footer #tagline {
+  color: #472836;
+  font-style: normal;
+}
+
+/* line 110, ../sass/classroom-style.scss */
+.bar {
+  height: 40px;
+  background: #472836;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 119, ../sass/classroom-style.scss */
+.avatar {
+  -moz-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
+  -webkit-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
+  box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+}
+
+/* line 129, ../sass/classroom-style.scss */
+section {
+  background-color: #d7ebba;
+  border-top: 1px solid #d7ebba;
+  border-bottom: 1px solid #d7ebba;
+  border-collapse: collapse;
+  padding: 0.5em 0.5em 0.5em;
+}
+
+/* line 137, ../sass/classroom-style.scss */
+body {
+  text-align: center;
+  font: 1em/1.5 Georgia, serif;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?uhpmsn");
+  src: url("fonts/icomoon.eot?uhpmsn#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?uhpmsn") format("truetype"), url("fonts/icomoon.woff?uhpmsn") format("woff"), url("fonts/icomoon.svg?uhpmsn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 156, ../sass/classroom-style.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 171, ../sass/classroom-style.scss */
+.icon-envelop:before {
+  content: "\e945";
+}
+
+/* line 174, ../sass/classroom-style.scss */
+.icon-mobile:before {
+  content: "\e958";
+}
+
+/* line 177, ../sass/classroom-style.scss */
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+/* line 181, ../sass/classroom-style.scss */
+#contact {
+  background: #73A6AD;
+  padding: 40px 20x 20px 20x;
+  max-width: 520px;
+  border-radius: 25px;
+  margin: auto;
+  color: #472836;
+}
+
+/* line 191, ../sass/classroom-style.scss */
+#linked {
+  background: #68B684;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+}
+
+/* line 197, ../sass/classroom-style.scss */
+#email {
+  background: #d7ebba;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+}
+
+/* line 203, ../sass/classroom-style.scss */
+#phone {
+  background: #95E06C;
+  padding: 20px 15px 20px 15px;
+  border-radius: 25px;
+}
+
+/* line 210, ../sass/classroom-style.scss */
+.social {
+  margin: 2em 0;
+}
+/* line 214, ../sass/classroom-style.scss */
+.social li {
+  font-size: 1.5em;
+  color: #472836;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: .5em;
+  -moz-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+}
+/* line 223, ../sass/classroom-style.scss */
+.social li:hover {
+  -moz-transform: scale(1.25, 1.25);
+  -ms-transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: grey;
+  text-shadow: 0px 0px 10px;
+}
+/* line 229, ../sass/classroom-style.scss */
+.social li:hover #phone #email #linked {
+  background: #36454f;
+}
+/* line 234, ../sass/classroom-style.scss */
+.social li:before {
+  position: absolute;
+  width: 2em;
+  /* center align technique, give width, negative half margin */
+  margin-left: -1em;
+  top: 0m;
+  left: 50%;
+}
+/* line 242, ../sass/classroom-style.scss */
+.social li a {
+  display: block;
+  color: inherit;
+  font-family: Tahoma, Georgia, serif;
+  padding: 1.50em 0em 0em;
+  width: 6em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

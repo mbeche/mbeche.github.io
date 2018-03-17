@@ -3,7 +3,6 @@
 @import "compass/css3"; //includes mixins for writing cross-browser CSS3 rules
 @import "compass/reset"; //resets page style to defaults
 
-/*
 $color1: rgba(195, 247, 58, 1); //Green Lizard #C3F73A Lime
 $color2: rgba(149, 224, 108, 1); //Pistachio #95E06C Green
 $color3: rgba(104, 182, 132, 1); //Iguana #68B684 Darker Green
@@ -12,25 +11,39 @@ $color5: rgba(28, 16, 24, 1); //Licorice #1C1018 Black-Purple
 $color6: rgba(251, 242, 192, 1); //Blond #FBF2C0 Light Tan Pink
 $color7: rgba(72, 57, 42, 1); //Taupe #48392A Tan Brown
 $color8: rgba(67, 40, 28, 1); //Bistre #43281C Dark Brown
-*/
 
-$color1: rgba(154, 210, 203, 1);
-$color2: rgba(215, 235, 186, 1);
-$color3: rgba(254, 255, 190, 1);
-$color4: rgba(235, 212, 148, 1);
-$color5: rgba(71, 40, 54, 1);
 
 $nav-border:$color1;
 $nav-cl:$color5;
-$body-cl:$color5;
-$hd-ft-cl:$color1;
+$hd-ft-cl:$color4;
+$body-cl:$hd-ft-cl;
 $bar-cl:$color5;
-$title-cl:$color3;
+$title-cl:$color1;
 
 //Include padding and border in the element's total width and height
 
 * {
     box-sizing: border-box;
+}
+html	{
+		
+	h1, h2, h3 {
+		font-family: Bitter, Georgia, serif;
+		padding: 0 1em;
+		
+		
+		h1 {
+			font-size: 3em;
+		}
+
+		h2 {
+			font-size: 2em;
+		}
+
+		h3 {
+			font-size: 2em;
+		}
+	}
 }
 
 //Make a navigation bar:
@@ -60,7 +73,7 @@ $title-cl:$color3;
 
 		a {
 			height: 40px;
-			color: white;
+			color: $nav-border;
 			display: block;
 			padding: 8px;
 		}
@@ -77,12 +90,12 @@ $title-cl:$color3;
 
 	.box {
 		border-radius: 25px;
-		color:white;
-		margin:auto;
+		color:$nav-cl;
+		margin: auto;
 		background: $title-cl;
 		padding: 20px 20px 20px;
 		display: inline-block;
-	}
+}
 
 //Header, footer, bar (section divider) styling
 
@@ -90,12 +103,19 @@ $title-cl:$color3;
 .footer {
     background: $hd-ft-cl;
     padding: 1em 1em 1em;
+	color: $color1;
+	font-style: italic;
+		#tagline {
+			color: $color1;
+			font-style: normal;
+		}
 }
 
 .bar {
     height: 40px;
     background: $bar-cl;
-    margin: auto;
+	width: 100%;
+	margin: auto;
 }
 
 //Styling for avatar in header
@@ -109,11 +129,11 @@ $title-cl:$color3;
 
 //Making main body formatting
 
-/*
+
 section {
-	background-color: $midblue;
-	border-top: 1px solid $midblue;
-	border-bottom: 1px solid $midblue;
+	background-color: $color4;
+	border-top: 1px solid $color4;
+	border-bottom: 1px solid $color4;
 	border-collapse:collapse;
 	padding: 0.5em 0.5em 0.5em;
 }
@@ -121,7 +141,118 @@ section {
 body {
 	text-align: center;
 	font: 1em/1.5 Georgia, serif;
-	color: #black;
-	background:$midblue
 }
-*/
+
+//All of the following is used for the footer
+
+//Icons for footer
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?uhpmsn');
+  src:  url('fonts/icomoon.eot?uhpmsn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?uhpmsn') format('truetype'),
+    url('fonts/icomoon.woff?uhpmsn') format('woff'),
+    url('fonts/icomoon.svg?uhpmsn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+#contact {
+			background: #73A6AD;
+			padding: 40px 20x 20px 20x;
+			max-width:520px;
+			border-radius: 25px;
+			margin: auto; //This margin: auto; actually does something
+			color: $color5;
+}
+
+
+#linked {
+			background: $color2;
+			padding: 20px 15px 20px 15px;
+			border-radius: 25px;
+}
+
+#email {
+			background: $color1;
+			padding: 20px 15px 20px 15px;
+			border-radius: 25px;
+}
+
+#phone {
+			background: $color3;
+			padding: 20px 15px 20px 15px;
+			border-radius: 25px;
+}
+
+//I need to figure out how to get links to apply to entire box (above)		
+.social {
+	
+    margin:2em 0;
+ 
+    li {
+		font-size:1.5em;
+		color:$color5;
+		
+        position: relative;
+        @include inline-block();
+        margin: .5em;
+        @include transition(all .15s ease);
+ 
+        &:hover {
+            @include scale(1.25);
+            color: grey;
+			text-shadow: 0px 0px 10px;
+			
+			//tried to make the background change color but it's not working
+			#phone #email #linked {
+				background: #36454f;
+			}   
+		}
+ 
+        &:before {
+            position: absolute;
+            width: 2em; /* center align technique, give width, negative half margin */
+            margin-left: -1em;
+            top: 0m;
+            left: 50%;
+        }
+ 
+        a {
+            display: block;
+            color: inherit;
+			font-family: Tahoma, Georgia, serif;
+            padding: 1.50em 0em 0em;
+            width: 6em;
+            // allow truncation if needed
+ //           overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
