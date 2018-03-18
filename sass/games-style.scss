@@ -3,15 +3,18 @@
 @import "compass/css3"; //includes mixins for writing cross-browser CSS3 rules
 @import "compass/reset"; //resets page style to defaults
 
-$color1: rgba(154, 210, 203, 1);
-$color2: rgba(215, 235, 186, 1);
-$color3: rgba(254, 255, 190, 1);
-$color4: rgba(235, 212, 148, 1);
-$color5: rgba(71, 40, 54, 1);
-$maroon: rgba(163, 22, 33, 1);
+
+$color1: rgba(105, 77, 117, 1);// cyber grape #694D75
+$color2: rgba(51, 24, 50, 1); //dark purple #331832
+$color3: rgba(71, 40, 54, 1);//licorice #1C1018
+$color4: rgba(90, 11, 77, 1);// tyrian purple #5A0B4D
+$color5: rgba(108, 166, 193, 1);//moonstone bllue #6CA6C1
 $color6: rgba(191, 219, 247, 1); //lightblue
-$color7: rgba(5, 60, 94, 1); //darkblue
+$color7: rgba(27, 82, 153, 1);// cyan cobalt blue #1B5299
+$color8: rgba(235, 212, 148, 1);//yale blue #094D92
+$color9: rgba(5, 60, 94, 1); //darkblue
 $midblue: rgba(31, 122, 140, 1);
+$maroon: rgba(163, 22, 33, 1);
 $red: rgba(219, 34, 42, 1);
 
 
@@ -20,7 +23,7 @@ $nav-cl:$color5;
 $hd-ft-cl:$color3;
 $body-cl:$color2;
 $bar-cl:$color5;
-$title-cl:$color1;
+$title-cl:$color3;
 
 //Original CSS from HTML I wrote:
 			
