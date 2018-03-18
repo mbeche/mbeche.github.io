@@ -20,40 +20,41 @@ $red: rgba(219, 34, 42, 1);
 
 $nav-border:$color2;
 $nav-cl:$color5;
-$hd-ft-cl:$color3;
+$hd-ft-cl:$color2;
 $body-cl:$color2;
 $bar-cl:$color5;
 $title-cl:$color3;
 
 //Original CSS from HTML I wrote:
 			
-			blockquote {
-				background: #dcd1e1;
-				border-left: 10px solid #5A0B4D;
-				margin: 1.5em 10px;
-				padding: 0.5em 10px;
-				quotes: "\201C""\201D""\2018""\2019";
-				FONT-SIZE:14px; 
-				font-style: italic; 
-				COLOR: Black; 
-				LINE-HEIGHT:16px; 
-				FONT-FAMILY:Helvetica,"Arial Narrow",sans-serif;
-			}
-			
-			code {
-				FONT-SIZE:12px;
-			}
-			
-			mark {
-				background-color: #ccf5ff;
-				color: black;
-			}
-			
-			.rcorners {
-				border-radius: 25px;
-				background: $color6;
-				padding: 1px 20px 1px; 
-			}
+	blockquote {
+		background: #dcd1e1;
+		border-left: 10px solid $color5;
+		margin: 1.5em 10px;
+		padding: 0.5em 10px;
+		quotes: "\201C""\201D""\2018""\2019";
+		FONT-SIZE:14px; 
+		font-style: italic; 
+		text-align: left;
+		COLOR: Black; 
+		LINE-HEIGHT:16px; 
+		FONT-FAMILY:Helvetica,"Arial Narrow",sans-serif;
+	}
+	
+	code {
+		FONT-SIZE:12px;
+	}
+	
+	mark {
+		background-color: $color5;
+		color: black;
+	}
+	
+	.rcorners {
+		border-radius: 25px;
+		background: $color6;
+		padding: 1px 20px 1px; 
+	}
 
 
 //Include padding and border in the element's total width and height
@@ -131,9 +132,10 @@ html	{
 
 .box {
 	border-radius: 25px;
-	color:$nav-cl;
+	color:$color3;
 	margin: auto;
 	margin: 0.5em;
+	text-align: left;
 	background: $color6;
 	padding: 20px 20px 20px;
 	display: inline-block;
@@ -144,6 +146,7 @@ html	{
 	@include transition(all .15s ease);
 	max-width: 75%;
 	border-radius: 25px;
+	text-align: center;
 	background: $color6;
 	@include inline-block();
 	margin: .5em;
@@ -224,7 +227,7 @@ section {
 }
 
 body {
-	text-align: center;
+	text-align: center;;
 	font: 1em/1.5 Georgia, serif;
 }
 
@@ -268,29 +271,29 @@ body {
 }
 
 #contact {
-			background: #73A6AD;
+			background: $color9;
 			padding: 40px 20x 20px 20x;
 			max-width:520px;
 			border-radius: 25px;
 			margin: auto; //This margin: auto; actually does something
-			color: $color5;
+			color: $color6;
 }
 
 
 #linked {
-			background: #68B684;
+			background: $color1;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
 
 #email {
-			background: $color2;
+			background: $color7;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
 
 #phone {
-			background: #95E06C;
+			background: $color4;
 			padding: 20px 15px 20px 15px;
 			border-radius: 25px;
 }
@@ -302,7 +305,7 @@ body {
  
     li {
 		font-size:1.5em;
-		color:$color5;
+		color:$color6;
 		
         position: relative;
         @include inline-block();

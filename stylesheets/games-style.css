@@ -67,63 +67,64 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 30, ../sass/games-style.scss */
 blockquote {
   background: #dcd1e1;
-  border-left: 10px solid #5A0B4D;
+  border-left: 10px solid #6ca6c1;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
   FONT-SIZE: 14px;
   font-style: italic;
+  text-align: left;
   COLOR: Black;
   LINE-HEIGHT: 16px;
   FONT-FAMILY: Helvetica,"Arial Narrow",sans-serif;
 }
 
-/* line 43, ../sass/games-style.scss */
+/* line 44, ../sass/games-style.scss */
 code {
   FONT-SIZE: 12px;
 }
 
-/* line 47, ../sass/games-style.scss */
+/* line 48, ../sass/games-style.scss */
 mark {
-  background-color: #ccf5ff;
+  background-color: #6ca6c1;
   color: black;
 }
 
-/* line 52, ../sass/games-style.scss */
+/* line 53, ../sass/games-style.scss */
 .rcorners {
   border-radius: 25px;
   background: #bfdbf7;
   padding: 1px 20px 1px;
 }
 
-/* line 61, ../sass/games-style.scss */
+/* line 62, ../sass/games-style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 67, ../sass/games-style.scss */
+/* line 68, ../sass/games-style.scss */
 html p {
   font-size: 1.25em;
 }
-/* line 71, ../sass/games-style.scss */
+/* line 72, ../sass/games-style.scss */
 html h1, html h2, html h3 {
   font-family: Bitter, Georgia, serif;
   padding: 0 1em;
 }
-/* line 76, ../sass/games-style.scss */
+/* line 77, ../sass/games-style.scss */
 html h1 h1, html h2 h1, html h3 h1 {
   font-size: 3em;
 }
-/* line 80, ../sass/games-style.scss */
+/* line 81, ../sass/games-style.scss */
 html h1 h2, html h2 h2, html h3 h2 {
   font-size: 2em;
 }
-/* line 84, ../sass/games-style.scss */
+/* line 85, ../sass/games-style.scss */
 html h1 h3, html h2 h3, html h3 h3 {
   font-size: 2em;
 }
 
-/* line 92, ../sass/games-style.scss */
+/* line 93, ../sass/games-style.scss */
 .nav {
   background-color: #6ca6c1;
   font-family: arial, tahoma;
@@ -132,48 +133,49 @@ html h1 h3, html h2 h3, html h3 h3 {
   border-top: 2px solid #331832;
   /* Change the link color to #111 (black) on hover */
 }
-/* line 99, ../sass/games-style.scss */
+/* line 100, ../sass/games-style.scss */
 .nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 105, ../sass/games-style.scss */
+/* line 106, ../sass/games-style.scss */
 .nav li {
   border-right: 2px solid #331832;
   float: left;
 }
-/* line 110, ../sass/games-style.scss */
+/* line 111, ../sass/games-style.scss */
 .nav li:last-child {
   border-left: 2px solid #331832;
   float: right;
 }
-/* line 115, ../sass/games-style.scss */
+/* line 116, ../sass/games-style.scss */
 .nav a {
   height: 40px;
   color: #331832;
   display: block;
   padding: 8px;
 }
-/* line 123, ../sass/games-style.scss */
+/* line 124, ../sass/games-style.scss */
 .nav li a:hover {
   text-decoration: none;
   background-color: #331832;
   color: #6ca6c1;
 }
 
-/* line 132, ../sass/games-style.scss */
+/* line 133, ../sass/games-style.scss */
 .box {
   border-radius: 25px;
-  color: #6ca6c1;
+  color: #472836;
   margin: auto;
   margin: 0.5em;
+  text-align: left;
   background: #bfdbf7;
   padding: 20px 20px 20px;
   display: inline-block;
 }
 
-/* line 143, ../sass/games-style.scss */
+/* line 145, ../sass/games-style.scss */
 .body-box {
   -moz-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
@@ -181,6 +183,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   transition: all 0.15s ease;
   max-width: 75%;
   border-radius: 25px;
+  text-align: center;
   background: #bfdbf7;
   display: inline-block;
   vertical-align: middle;
@@ -190,7 +193,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   margin: .5em;
   padding: 0px 10px 10px 10px;
 }
-/* line 152, ../sass/games-style.scss */
+/* line 155, ../sass/games-style.scss */
 .body-box a {
   float: middle;
   color: #6ca6c1;
@@ -198,14 +201,14 @@ html h1 h3, html h2 h3, html h3 h3 {
   padding: 0px 10px 20px 10px;
   overflow: auto;
 }
-/* line 160, ../sass/games-style.scss */
+/* line 163, ../sass/games-style.scss */
 .body-box .box {
   width: 80%;
-  background-color: #472836;
+  background-color: #331832;
   margin: 0.5em;
   padding: 0px 0px 0px 0px;
 }
-/* line 166, ../sass/games-style.scss */
+/* line 169, ../sass/games-style.scss */
 .body-box .box a:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -218,42 +221,42 @@ html h1 h3, html h2 h3, html h3 h3 {
 }
 
 @media only screen and (max-width: 1000px) {
-  /* line 179, ../sass/games-style.scss */
+  /* line 182, ../sass/games-style.scss */
   .body-box {
     max-width: 100%;
   }
 }
-/* line 186, ../sass/games-style.scss */
+/* line 189, ../sass/games-style.scss */
 .header,
 .footer {
   text-align: center;
-  background: #472836;
+  background: #331832;
   padding: 1em 1em 1em;
   color: #6ca6c1;
   font-style: italic;
 }
-/* line 193, ../sass/games-style.scss */
+/* line 196, ../sass/games-style.scss */
 .header #tagline,
 .footer #tagline {
   color: #6ca6c1;
   font-style: normal;
 }
 
-/* line 199, ../sass/games-style.scss */
+/* line 202, ../sass/games-style.scss */
 .bar {
   overflow: auto;
-  color: #472836;
+  color: #331832;
   height: 80px;
   background: #6ca6c1;
   width: 100%;
   margin: auto;
 }
 
-/* line 210, ../sass/games-style.scss */
+/* line 213, ../sass/games-style.scss */
 .avatar {
-  -moz-box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #472836, 0 0 14px 10px #331832;
-  -webkit-box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #472836, 0 0 14px 10px #331832;
-  box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #472836, 0 0 14px 10px #331832;
+  -moz-box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #331832, 0 0 14px 10px #331832;
+  -webkit-box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #331832, 0 0 14px 10px #331832;
+  box-shadow: 0 0 10px 4px #6ca6c1, 0 0 12px 6px #331832, 0 0 14px 10px #331832;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
@@ -261,7 +264,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   height: 150px;
 }
 
-/* line 218, ../sass/games-style.scss */
+/* line 221, ../sass/games-style.scss */
 section {
   background-color: #331832;
   border-top: 1px solid #331832;
@@ -270,7 +273,7 @@ section {
   padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
-/* line 226, ../sass/games-style.scss */
+/* line 229, ../sass/games-style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
@@ -283,7 +286,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-/* line 245, ../sass/games-style.scss */
+/* line 248, ../sass/games-style.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -298,60 +301,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 260, ../sass/games-style.scss */
+/* line 263, ../sass/games-style.scss */
 .icon-envelop:before {
   content: "\e945";
 }
 
-/* line 263, ../sass/games-style.scss */
+/* line 266, ../sass/games-style.scss */
 .icon-mobile:before {
   content: "\e958";
 }
 
-/* line 266, ../sass/games-style.scss */
+/* line 269, ../sass/games-style.scss */
 .icon-linkedin:before {
   content: "\eac9";
 }
 
-/* line 270, ../sass/games-style.scss */
+/* line 273, ../sass/games-style.scss */
 #contact {
-  background: #73A6AD;
+  background: #053c5e;
   padding: 40px 20x 20px 20x;
   max-width: 520px;
   border-radius: 25px;
   margin: auto;
-  color: #6ca6c1;
+  color: #bfdbf7;
 }
 
-/* line 280, ../sass/games-style.scss */
+/* line 283, ../sass/games-style.scss */
 #linked {
-  background: #68B684;
+  background: #694d75;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 286, ../sass/games-style.scss */
+/* line 289, ../sass/games-style.scss */
 #email {
-  background: #331832;
+  background: #1b5299;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 292, ../sass/games-style.scss */
+/* line 295, ../sass/games-style.scss */
 #phone {
-  background: #95E06C;
+  background: #5a0b4d;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 299, ../sass/games-style.scss */
+/* line 302, ../sass/games-style.scss */
 .social {
   margin: 2em 0;
 }
-/* line 303, ../sass/games-style.scss */
+/* line 306, ../sass/games-style.scss */
 .social li {
   font-size: 1.5em;
-  color: #6ca6c1;
+  color: #bfdbf7;
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -364,7 +367,7 @@ body {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 312, ../sass/games-style.scss */
+/* line 315, ../sass/games-style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -373,11 +376,11 @@ body {
   color: grey;
   text-shadow: 0px 0px 10px;
 }
-/* line 318, ../sass/games-style.scss */
+/* line 321, ../sass/games-style.scss */
 .social li:hover #phone #email #linked {
   background: #36454f;
 }
-/* line 323, ../sass/games-style.scss */
+/* line 326, ../sass/games-style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -386,7 +389,7 @@ body {
   top: 0m;
   left: 50%;
 }
-/* line 331, ../sass/games-style.scss */
+/* line 334, ../sass/games-style.scss */
 .social li a {
   display: block;
   color: inherit;
