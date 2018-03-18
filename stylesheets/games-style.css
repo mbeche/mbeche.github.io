@@ -102,24 +102,28 @@ mark {
 }
 
 /* line 64, ../sass/games-style.scss */
+html p {
+  font-size: 1.25em;
+}
+/* line 68, ../sass/games-style.scss */
 html h1, html h2, html h3 {
   font-family: Bitter, Georgia, serif;
   padding: 0 1em;
 }
-/* line 69, ../sass/games-style.scss */
+/* line 73, ../sass/games-style.scss */
 html h1 h1, html h2 h1, html h3 h1 {
   font-size: 3em;
 }
-/* line 73, ../sass/games-style.scss */
+/* line 77, ../sass/games-style.scss */
 html h1 h2, html h2 h2, html h3 h2 {
   font-size: 2em;
 }
-/* line 77, ../sass/games-style.scss */
+/* line 81, ../sass/games-style.scss */
 html h1 h3, html h2 h3, html h3 h3 {
   font-size: 2em;
 }
 
-/* line 85, ../sass/games-style.scss */
+/* line 89, ../sass/games-style.scss */
 .nav {
   background-color: #472836;
   font-family: arial, tahoma;
@@ -128,37 +132,37 @@ html h1 h3, html h2 h3, html h3 h3 {
   border-top: 2px solid #d7ebba;
   /* Change the link color to #111 (black) on hover */
 }
-/* line 92, ../sass/games-style.scss */
+/* line 96, ../sass/games-style.scss */
 .nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 98, ../sass/games-style.scss */
+/* line 102, ../sass/games-style.scss */
 .nav li {
   border-right: 2px solid #d7ebba;
   float: left;
 }
-/* line 103, ../sass/games-style.scss */
+/* line 107, ../sass/games-style.scss */
 .nav li:last-child {
   border-left: 2px solid #d7ebba;
   float: right;
 }
-/* line 108, ../sass/games-style.scss */
+/* line 112, ../sass/games-style.scss */
 .nav a {
   height: 40px;
   color: #d7ebba;
   display: block;
   padding: 8px;
 }
-/* line 116, ../sass/games-style.scss */
+/* line 120, ../sass/games-style.scss */
 .nav li a:hover {
   text-decoration: none;
   background-color: #d7ebba;
   color: #472836;
 }
 
-/* line 125, ../sass/games-style.scss */
+/* line 129, ../sass/games-style.scss */
 .box {
   border-radius: 25px;
   color: #472836;
@@ -169,7 +173,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   display: inline-block;
 }
 
-/* line 136, ../sass/games-style.scss */
+/* line 140, ../sass/games-style.scss */
 .body-box {
   -moz-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
@@ -186,7 +190,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   margin: .5em;
   padding: 0px 10px 10px 10px;
 }
-/* line 145, ../sass/games-style.scss */
+/* line 149, ../sass/games-style.scss */
 .body-box a {
   float: middle;
   color: #472836;
@@ -194,14 +198,14 @@ html h1 h3, html h2 h3, html h3 h3 {
   padding: 0px 10px 20px 10px;
   overflow: auto;
 }
-/* line 153, ../sass/games-style.scss */
+/* line 157, ../sass/games-style.scss */
 .body-box .box {
   width: 80%;
   background-color: #feffbe;
   margin: 0.5em;
   padding: 0px 0px 0px 0px;
 }
-/* line 159, ../sass/games-style.scss */
+/* line 163, ../sass/games-style.scss */
 .body-box .box a:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -214,12 +218,12 @@ html h1 h3, html h2 h3, html h3 h3 {
 }
 
 @media only screen and (max-width: 1000px) {
-  /* line 172, ../sass/games-style.scss */
+  /* line 176, ../sass/games-style.scss */
   .body-box {
     max-width: 100%;
   }
 }
-/* line 179, ../sass/games-style.scss */
+/* line 183, ../sass/games-style.scss */
 .header,
 .footer {
   text-align: center;
@@ -228,14 +232,14 @@ html h1 h3, html h2 h3, html h3 h3 {
   color: #472836;
   font-style: italic;
 }
-/* line 186, ../sass/games-style.scss */
+/* line 190, ../sass/games-style.scss */
 .header #tagline,
 .footer #tagline {
   color: #472836;
   font-style: normal;
 }
 
-/* line 192, ../sass/games-style.scss */
+/* line 196, ../sass/games-style.scss */
 .bar {
   overflow: auto;
   color: #feffbe;
@@ -245,7 +249,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   margin: auto;
 }
 
-/* line 203, ../sass/games-style.scss */
+/* line 207, ../sass/games-style.scss */
 .avatar {
   -moz-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
   -webkit-box-shadow: 0 0 10px 4px #472836, 0 0 12px 6px #feffbe, 0 0 14px 10px #d7ebba;
@@ -257,7 +261,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   height: 150px;
 }
 
-/* line 211, ../sass/games-style.scss */
+/* line 215, ../sass/games-style.scss */
 section {
   background-color: #d7ebba;
   border-top: 1px solid #d7ebba;
@@ -266,7 +270,7 @@ section {
   padding: 0.5% 0.5% 0.5% 0.5%;
 }
 
-/* line 219, ../sass/games-style.scss */
+/* line 223, ../sass/games-style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
@@ -279,7 +283,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-/* line 238, ../sass/games-style.scss */
+/* line 242, ../sass/games-style.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -294,22 +298,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 253, ../sass/games-style.scss */
+/* line 257, ../sass/games-style.scss */
 .icon-envelop:before {
   content: "\e945";
 }
 
-/* line 256, ../sass/games-style.scss */
+/* line 260, ../sass/games-style.scss */
 .icon-mobile:before {
   content: "\e958";
 }
 
-/* line 259, ../sass/games-style.scss */
+/* line 263, ../sass/games-style.scss */
 .icon-linkedin:before {
   content: "\eac9";
 }
 
-/* line 263, ../sass/games-style.scss */
+/* line 267, ../sass/games-style.scss */
 #contact {
   background: #73A6AD;
   padding: 40px 20x 20px 20x;
@@ -319,32 +323,32 @@ body {
   color: #472836;
 }
 
-/* line 273, ../sass/games-style.scss */
+/* line 277, ../sass/games-style.scss */
 #linked {
   background: #68B684;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 279, ../sass/games-style.scss */
+/* line 283, ../sass/games-style.scss */
 #email {
   background: #d7ebba;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 285, ../sass/games-style.scss */
+/* line 289, ../sass/games-style.scss */
 #phone {
   background: #95E06C;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 292, ../sass/games-style.scss */
+/* line 296, ../sass/games-style.scss */
 .social {
   margin: 2em 0;
 }
-/* line 296, ../sass/games-style.scss */
+/* line 300, ../sass/games-style.scss */
 .social li {
   font-size: 1.5em;
   color: #472836;
@@ -360,7 +364,7 @@ body {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 305, ../sass/games-style.scss */
+/* line 309, ../sass/games-style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -369,11 +373,11 @@ body {
   color: grey;
   text-shadow: 0px 0px 10px;
 }
-/* line 311, ../sass/games-style.scss */
+/* line 315, ../sass/games-style.scss */
 .social li:hover #phone #email #linked {
   background: #36454f;
 }
-/* line 316, ../sass/games-style.scss */
+/* line 320, ../sass/games-style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -382,7 +386,7 @@ body {
   top: 0m;
   left: 50%;
 }
-/* line 324, ../sass/games-style.scss */
+/* line 328, ../sass/games-style.scss */
 .social li a {
   display: block;
   color: inherit;

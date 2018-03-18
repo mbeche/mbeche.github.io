@@ -169,38 +169,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: black;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
+html p {
+  font-size: 1.25em;
+}
+/* line 131, ../sass/style.scss */
 html h1, html h2, html h3 {
   font-family: Bitter, Georgia, serif;
   padding: 0 1em;
 }
-/* line 130, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 html h1 h1, html h2 h1, html h3 h1 {
   font-size: 3em;
 }
-/* line 134, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 html h1 h2, html h2 h2, html h3 h2 {
   font-size: 2em;
 }
-/* line 138, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 html h1 h3, html h2 h3, html h3 h3 {
   font-size: 2em;
 }
 
-/* line 145, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .header,
 .footer {
   background: #db222a;
   padding: 1em 1em 1em;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .bar {
   height: 40px;
   background: #053c5e;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .avatar {
   -moz-box-shadow: 0 0 10px 4px #053c5e, 0 0 12px 6px #db222a, 0 0 14px 10px #a31621;
   -webkit-box-shadow: 0 0 10px 4px #053c5e, 0 0 12px 6px #db222a, 0 0 14px 10px #a31621;
@@ -212,7 +216,7 @@ html h1 h3, html h2 h3, html h3 h3 {
   height: 150px;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 section {
   background-color: #1f7a8c;
   border-top: 1px solid #1f7a8c;
@@ -221,7 +225,7 @@ section {
   padding: 0.5em 0.5em 0.5em;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
@@ -229,12 +233,12 @@ body {
   background: #1f7a8c;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -247,7 +251,7 @@ img {
   font-weight: normal;
   font-style: normal;
 }
-/* line 207, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -262,22 +266,22 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .icon-envelop:before {
   content: "\e945";
 }
 
-/* line 225, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .icon-mobile:before {
   content: "\e958";
 }
 
-/* line 228, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .icon-linkedin:before {
   content: "\eac9";
 }
 
-/* line 232, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 #contact {
   background: #77b3ee;
   max-width: 520px;
@@ -287,32 +291,32 @@ img {
   color: white;
 }
 
-/* line 242, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 #linked {
   background: #053c5e;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 #email {
   background: #a31621;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 #phone {
   background: #1f7a8c;
   padding: 20px 15px 20px 15px;
   border-radius: 25px;
 }
 
-/* line 261, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .social {
   margin: 2em 0;
 }
-/* line 265, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .social li {
   font-size: 1.5em;
   color: white;
@@ -328,7 +332,7 @@ img {
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
-/* line 274, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .social li:hover {
   -moz-transform: scale(1.25, 1.25);
   -ms-transform: scale(1.25, 1.25);
@@ -337,11 +341,11 @@ img {
   color: grey;
   text-shadow: 0px 0px 10px;
 }
-/* line 280, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .social li:hover #phone #email #linked {
   background: #36454f;
 }
-/* line 285, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .social li:before {
   position: absolute;
   width: 2em;
@@ -350,7 +354,7 @@ img {
   top: 0m;
   left: 50%;
 }
-/* line 293, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .social li a {
   display: block;
   color: inherit;

@@ -71,6 +71,11 @@ html {
 		/* if you want to use the italic version of Bitter */
 		padding: 0 1em;
 	}
+
+	p {
+		font-size: 1.25em;
+	}
+	
 }
 
 .header,
@@ -104,10 +109,15 @@ section {
 //this would not be allowed in CSS, it would need to be split into two
 
 .header {
-    padding: 1em 1em 1em;
-    h1 {
+	padding: 1em 1em 1em;
+	h1 {
 		color:black;
 		font-style: italic;
+		font-size: 3em;
+    }
+
+	h2 {
+		color:black;
 		font-size: 2em;
     }
 }
@@ -190,9 +200,9 @@ img {
 .rcorners {
 	border-radius: 25px;
 	background: $color1;
-	max-width:600px;
+	display: inline-block;
 	margin: auto;
-	padding: 0px 0px 5px 15px;
+	padding: 15px 15px 15px 15px;
 	color:#000000;
 }
 
@@ -200,9 +210,11 @@ img {
 	border-radius: 25px;
 	background: $color1;
 	margin: auto;
-	width: 95%
-	padding: 0px 0px 5px 15px;
+	width: 95%;
+	display: inline-block;
+	padding: 0px 15px 5px 15px;
 	color:#000000;
+	overflow: auto;
 }
 
 
