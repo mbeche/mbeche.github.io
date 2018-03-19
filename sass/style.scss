@@ -94,6 +94,28 @@ $nav-background:$darkblue;
 	padding: 5px 20px 5px; 
 }
 
+.head-box {
+	border-radius: 25px;
+	color: white;
+	text-align: center;
+	background: $red;
+	padding: 0.2em;
+	float: center;
+	margin: auto;
+	width: 95%;
+	
+	h2 {
+	margin: 0.2em;
+	font-size: 1.5em;
+	text-aling: center;
+	font-style: italic;
+	}
+	
+	p {
+	font-size: 1em;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.body-box {
         max-width: 100%;
