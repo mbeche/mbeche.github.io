@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static "style.css" %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+</head>
+<body>
+  <div class="container w-100">
+    <div class="text-center">
+      <h1>Reflection on Making IMTwitter App in Django</h1>
+    </div>
+    <div class="row justify-content-center">
+      <a href="https://github.com/mbeche/mysite-imtwitter" target="_blank" style="color: white;"><button class="m-2 btn btn-primary">GitHub Repo</button></a>
+      <a href="https://imtwitter.mdevstix.com" target="_blank" style="color: white;"><button class="m-2 btn btn-success">Live Site</button></a>
+    </div>
+    <div class="container p-2 ml-2 mr-2">
+      What a blast this project has been. Looking back at early notes on this project (available <a href="https://github.com/mbeche/imtwitter-django-app/tree/master/Progress" target="_blank">here</a>) helps me see how far I've come and how nice working with Django can be. There have been a handful of challenges and perhaps some dubious workarounds, but this has been a formidable learning experience. Below I highlight these challenges, growth spots, and workarounds - mentioning what I think are the important realizations throughout my process.
+    </div></br>
+    <h2>Getting Started</h2>
+    <p>From the crash course I took in Django before my interview, I was able to replicate the process pretty well to start up the project + app, but adding user authentication was new. Thankfully Django Documentation, <a href="https://tutorial-extensions.djangogirls.org/en/homework_create_more_models/">many</a> <a href="https://djangobook.com/authentication-web-requests/">upon</a> <a href="http://www.mastercode.online/tutorials/language/tutorial_series/tutorial/how-to-django-blog-application-how-to-edit-post-in-django/">many</a> tutorials, and stackoverflow helped me make progress. I also attribute determination, help from friends, and many hours to the success of this project.</p>
+
+    <p>Some of the early hurdles was conceptually understanding how Django expects content to be lined up: making and extending a base.html file, making URLconfs (once I learned that’s what they were called) line up with views, linking to URLconfs in the template, creating models and model forms, and using Django’s included authentication framework.</p>
+
+    <h2>Noteworthy Discoveries</h2>
+    <p>Probably the most noteworthy discovery was linking several views to the same template. I was able to have “create”, “edit”, and “delete” post occur all from the same template. I was also able to make the “sort posts”, “search posts” and “Sorry, you can’t edit/delete this post” views all direct to the same template. The possibilities alloted from working within this framework to write DRY code become increasingly evident while I was working on this project (especially if one knows the capability of the aforementioned techniques from the start).</p>
+
+    <p>While I would have preferred to use automated testing to develop this project (unit tests, integrated tests, and end-to-end tests) I am not certain how to do this or at the very least how to do this effectively. This is one reason I look forward at working at IMT - to learn from an experienced team how to implement testing into my coding practice.</p>
+
+    <p>Another notable experience was creating custom views. Creating my post and comment view from my form was pretty straight forward from the tutorials. However, creating my “sort post” and “search post” views kind of looked like this once I got it working:</p>
+
+    <div class="row justify-content-center">
+      <a href="https://img.devrant.com/devrant/rant/r_1282394_vVjVM.jpg" target="_blank" style="color: white;"><button class="m-2 btn btn-primary">Me Getting My Sort View Working</button></a>
+    </div><br>
+
+    <h2>Sort by User and Search Function</h2>
+    <p>Perhaps one of the biggest hate to love relationships the evolved was using RegEx in my URLconfs to create custom views for sorting. I remember thinking after I used my first one “but where does the view get the information from about what post to access?” I reviewed the tutorial I was following and followed through the code and the realization washed over me, “The URL itself is giving the view the information from the URLconf!” This was what allowed me to create the search feature that I put together.</p>
+
+    <p>For my search feature, I discovered at least 2-3 different ways to make my search feature. At first I discovered Django modules and functions that allow you to search Postgres databases for keywords. In the end I chose to create a form in the template that would save the query to pull into my view using a GET protocol. Then I would find posts that include that query and return them.</p>
+
+    <h2>Styling and JavaScript</h2>
+    <p>As far styling, I chose to use a mixture of Bootstrap 4 and CSS. To minimize the number of moving parts I chose to use inline CSS to start with (despite the ghost of “separation of concern” haunting me the whole time). Eventually to make the mobile version of the interface look good I decided I needed to use @media queries, broke down and created a CSS file.</p>
+
+    <p>I did not venture into the use of JavaScript except for one fix. I decided to make bookmark anchor tags so that when you comment or edit you will be redirected to that post on the dashboard. This involved using a reverse lookup on my URLconf and concatenating it with the RegEx variable supplied the URL you were at to edit or create a comment. This felt like a triumph in itself but because the navbar was fixed position, it covered up the top of where the anchor tag was located, making it appear to be ~50px below where I wanted it to redirect. So I found some JS code that would put an event handler on loading the page with bookmark anchor tags and scroll the page in the y-direction a specified amount. It was quite a bit of work for a small thing but I felt that the increase in user experience was worth it.</p>
+
+    <h2>Deploying</h2>
+    <p>I’d like to lastly talk about getting my project on DigitalOcean (DO) via <link>imtwitter.mdevstix.com. Luckily DO has great tutorials on doing this. The experience also gave me a lot of great practice in creating Postgres databases/users, creating secret files with .gitignore, using Gunicorn and Nginx, and even using Let's Encrypt to make SSL/TLS Certificates. I decided to use SSL/TLS because friends and family with iPhones and MacBooks were getting warnings that my site was not trusted. It didn’t mitigate this issue completely, but you can now access my site view https://imtwitter.mdevstix.com</p>
+
+    <p>I came across a couple issues with using Git, GitHub and Postgres while deploying my website. The solution to the GitHub situation was to create new folders and move all my files to the new folder, ultimately creating a new repository. The issue with Postgres was trying to deploy a project with apps already was giving me an error when making migrations (it said auth.user was not defined). Troubleshooting did not work for this so I created a new project on my server and imported my apps to that. This fixed the problem, but also required me to create a github repo. This leads me to what was probably the most satisfactory of experiences on this project...</p>
+    <img src="so-beautiful.jpg" class="float-right img-fluid" alt="">
+    <ol>
+      <li>Making a change on my local server and checking to see how it changed my localhost</li>
+      <li>Pushing the changes to github</li>
+      <li>Pulling my changes to the server</li>
+      <li>Restarting Gunicorn to update the changes</li>
+      <li>Refreshing my browser on my computer/phone to see the changes updated on my deployed website</li>
+      <li>Repeat</li>
+    </ol>
+
+    <p>Creating this project, the hurdles, triumphs and learning it has entailed has been an amazing experience. I hope they are the first of many with IMT computer services!</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
