@@ -1,0 +1,30 @@
+<h1>Sprint 4: Create interface for making new accounts</h1>
+<em>April 28, 2018 at 9:22pm</em>
+
+<p>The tutorial I was using for Sprint 3 by William S. Vincent has a followup tutorial <a href="https://wsvincent.com/django-user-authentication-tutorial-signup/">Django User Signup</a> to make a user account setup app. Apparently Django does not provide views for this, so we will be creating the interface in a new app. It will be interesting to integrate this with my project!</p>
+<p>After completing this sprint, I will go back and work on the post/comments template and model, then pretty things up with HTML formatting and CSS:</p>
+<h3><ul>
+  <li>Sprint 5: Create the models, templates and views for posts and comments</li>
+  <li>Sprint 6: Use CSS to make things look nice</li>
+</ul></h3>
+
+<h2>Breakdown of Sprint 4:</h2>
+<ol>
+  <li>create an app: <code>python manage.py startapp accounts</code></li>
+  <li>Add app to the <code>INSTALLED_APPS</code> in the settings.py file (<em>The author of the tutorial just has 'accounts' added to the list. I would expect that 'accounts.apps.accountsConfig' to be the entry we should add. We'll see if the author's approach works and then I'll try mine if it doesn't.</em>)</li>
+  <li>Create a URLconf for accounts. This will have the same path as the accounts URLconf we created in the last sprint and will need to go before that URLconf. This is because Django looks top to bottom for URLconf. So it'll see our new URLconf within our accounts app, and then (or otherwise) push forward to the normal login if an account is created. (<em>how does the system know if we have an account created or not? hmm..</em>)</li>
+  <li>Create a urls.py file inside the accounts directory for signup</li>
+  <li>Go into views and create a SignUp class where we use the built in <code>UserCreationForm</code>. We also use a <code>reverse_lazy('login')</code> to redirect the user to the login page once they have created an account. (<em>The reverse lazy has an explanation but the rational eludes me at the moment. More to be revealed I suppose.)</em></li>
+  <li>Create a template: 'signup.html' in the project (imtwitter) level templates folder</li>
+  <ol type='a'>
+    <li>Why the project level and not app level? Still trying to figure this out</li>
+    <li>Use the <code>{% extends 'base.html' %}</code> format again.</li>
+    <li><strong>Continued point of confusion:</strong>The html looks exactly the same as the 'login.html' with <code> {% csrf_token %}</code> and <code>{{ form.as_p }}</code>. How does Django know what form to use? </li>
+  </ol>
+</ol>
+<p>That was painless. Currently the directory the account creation lives at is: <code>http://127.0.0.1:8000/accounts/signup/</code><br>I think that I need to add a link to that on the main page as an alternative to login.</p>
+<p>Above note has been completed. Created a new users:
+  <ul>
+    <li>login: 'Apples123' / pw: 'tastesgood'</li>
+    <li>login: 'mikej' / pw: 'imsocool'</li>
+  </ul></p>
