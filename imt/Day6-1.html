@@ -1,4 +1,16 @@
-<h1>Day 6: Redirect sidequest, other fixes, and styling</h1>
+<h1><!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static "style.css" %}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+</head>
+<body><div class="container">
+</h1>
 <em>May 3, 2018 at 9:49am</em>
 
 <p>Alright, time to reevaluate the situation:</p>
@@ -93,3 +105,8 @@
   <li>I've tried to do some troubleshooting with this. I have created a form that had the usernames of all users as a dropdown menu, however when I tried to call this form using {{ formname.as_p }} nothing showed up. Maybe it's because I need to create this from the model? I shouldn't need to because the model is already created..</li>
   <li>I've made some headway on sorting by username with using REGEX in my URLconf to call the user in the view to be sorted by. I used the following URLconf <code>r'^posts/(?P<username>[-\w]+</code> I'm hoping I used the right REGEX at the end </li>
 </ol>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
